@@ -11,7 +11,7 @@ const identity = {
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 const skillColor = "crimson";
 const fontWeight = "bolder";
@@ -41,11 +41,11 @@ const textCase = "uppercase";
 
     {finished && <p>I finished this tutorial!</p>}
 
-    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>I achieved my goal!</p>}
     
     <style is:global define:vars={{skillColor, fontWeight, textCase}}>
-        h1 {
-            color: purple;
+        h2 {
+            color: rgb(8, 234, 215);
             font-size: 4rem;
         }
         .skill {

@@ -1,11 +1,25 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-const { frontmatter } = Astro.props;
+
+const { frontmatter }  = Astro.props;
+const rawDate = frontmatter.pubDate;
+const d = rawDate instanceof Date ? rawDate : new Date(rawDate);
+
+function ordinal(n: number) {
+  return (
+    n +
+    (["st","nd","rd"][((n+90)%100-10)%10-1] || "th")
+  );
+}
+
+const formatteddate = `${ordinal(d.getDate())} of ${d.toLocaleString("en", {
+  month: "long"
+})}, ${d.getFullYear()}`;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <h3>{frontmatter.description}</h3>
-    <p>Written by {frontmatter.author}</p>
-    <p>Published on: {frontmatter.pubDate}</p>
+    <p><b>By {frontmatter.author}</b></p>
+    <p><i>{formatteddate}</i></p>
     <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
 
     <div class="tags">
