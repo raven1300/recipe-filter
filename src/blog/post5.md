@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: 5th and final post
 author: Nick Lee
 description: "This is my 5th post, added out of the blue"

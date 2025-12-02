@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: My Fourth Blog Post
 author: Nick Lee
 description: "This is the fourth file to test things"
