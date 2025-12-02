@@ -3,18 +3,23 @@ import BaseLayout from "./BaseLayout.astro";
 
 const { frontmatter }  = Astro.props;
 const rawDate = frontmatter.pubDate;
-const d = rawDate instanceof Date ? rawDate : new Date(rawDate);
-
-function ordinal(n: number) {
-  return (
-    n +
-    (["st","nd","rd"][((n+90)%100-10)%10-1] || "th")
-  );
+let d = rawDate instanceof Date ? rawDate : rawDate ? new Date(rawDate) : null;
+if (!d || !isFinite(d.getTime())) {
+  d = new Date(); 
 }
 
-const formatteddate = `${ordinal(d.getDate())} of ${d.toLocaleString("en", {
-  month: "long"
-})}, ${d.getFullYear()}`;
+function ordinal(n: number) {
+  const hundredRemainder = n % 100;
+  if (hundredRemainder >= 11 && hundredRemainder <= 13) return `${n}th`;
+  switch (n % 10) {
+    case 1: return `${n}st`;
+    case 2: return `${n}nd`;
+    case 3: return `${n}rd`;
+    default: return `${n}th`;
+  }
+}
+
+const formatteddate = `${ordinal(d.getDate())} of ${d.toLocaleString("en", {month: "long"})}, ${d.getFullYear()}`;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <h3>{frontmatter.description}</h3>
