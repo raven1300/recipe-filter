@@ -3,6 +3,7 @@
 ## Goal
 
 A single interactive page where you can:
+
 1. Filter recipes by tag (multiple tags at once)
 2. Add individual recipes to a personal list
 3. Click "View my list" to see only the selected recipes in full
@@ -17,12 +18,14 @@ No navigation changes, no PDF, no new dependencies. All state lives client-side 
 Astro handles data fetching at build time. Preact handles all interactivity.
 
 ### What Astro does (build time)
+
 - Fetches all recipes via content collections
 - Renders each recipe's full HTML content
 - Pre-renders everything into the page (selected recipes are hidden until needed)
 - Passes recipe data + rendered HTML to the Preact component as props
 
 ### What Preact does (runtime)
+
 - Manages `selectedTags` state (Set) — for filtering
 - Manages `myList` state (Set of recipe IDs) — for the curated list
 - Toggles between "browse" view, "my list" view, and "shopping list" view

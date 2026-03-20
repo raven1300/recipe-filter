@@ -12,11 +12,11 @@
     border: 0;
     background: none;
   }
-  .sun { fill: black; }
+  .sun { fill: #faf7f0; }
   .moon { fill: transparent; }
 
   :global(.dark) .sun { fill: transparent; }
-  :global(.dark) .moon { fill: white; }
+  :global(.dark) .moon { fill: #f5c842; }
 </style>
 
 <script is:inline>
@@ -25,10 +25,10 @@
     if (['dark', 'light'].includes(localStorageTheme)) {
       return localStorageTheme;
     }
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
       return 'light';
+    }
+      return 'dark';
   })();
 
   if (theme === 'light') {

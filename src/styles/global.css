@@ -1,6 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+/* ===== CSS Custom Properties ===== */
+
+:root {
+  /* Light mode — summer day, green grass */
+  --bg:            #faf7f0;
+  --bg-surface:    #f0ebe0;
+  --bg-header:     #4a7c3f;
+  --primary:       #4a7c3f;
+  --primary-dark:  #3a6130;
+  --primary-text:  #faf7f0;
+  --header-text:   #faf7f0;
+  --accent:        #c17f3a;
+  --accent-dark:   #a86a28;
+  --text:          #2c2416;
+  --text-muted:    #7a6a55;
+  --border:        #cfc4aa;
+  --border-light:  #e8e0d0;
+  --nav-active:    #fdba74;
+  --danger:        #a83030;
+  --danger-hover:  #7a1a1a;
+}
+
+html.dark {
+  /* Dark mode — campfire, warm embers */
+  --bg:            #1c1008;
+  --bg-surface:    #2c1c0c;
+  --bg-header:     #2c1c0c;
+  --primary:       #e8943a;
+  --primary-dark:  #d47d25;
+  --primary-text:  #1c1008;
+  --header-text:   #f5e8d0;
+  --accent:        #f5c842;
+  --accent-dark:   #e0b030;
+  --text:          #f5e8d0;
+  --text-muted:    #c4a882;
+  --border:        #5c3a1a;
+  --border-light:  #3d2510;
+  --nav-active:    #f5c842;
+  --danger:        #e87070;
+  --danger-hover:  #d04040;
+}
+
+/* ===== Base ===== */
+
 html {
-  background-color: #f1f5f9;
-  font-family: sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -8,33 +55,84 @@ body {
   width: 100%;
   max-width: 80ch;
   padding: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 * {
   box-sizing: border-box;
 }
 
-h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Pro', serif;
+  color: var(--text);
 }
 
-/* nav styles */
+a {
+  color: var(--primary);
+}
+
+/* ===== Header ===== */
+
+header {
+  background-color: var(--bg-header);
+  margin: -1rem -1rem 0 -1rem;
+  padding: 0 1rem;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.75rem 0;
+}
+
+.site-name {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--header-text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-name:hover {
+  color: var(--nav-active);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ===== Nav ===== */
 
 .menu {
-  background-color: #0d0950;
+  background: none;
   border: none;
-  color: #fff;
-  font-size: 1.2rem;
+  color: var(--header-text);
+  font-size: 1.1rem;
   font-weight: bold;
   padding: 5px 10px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
+/* Mobile: nav hidden, full-width when expanded */
 .nav-links {
-  width: 100%;
   display: none;
+  width: 100%;
+  order: 10;
   margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: block;
 }
 
 .nav-links a {
@@ -42,33 +140,41 @@ h1 {
   text-align: center;
   padding: 10px 0;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #0d0950;
+  letter-spacing: 0.08em;
+  color: var(--header-text);
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
-:has(.menu[aria-expanded="true"]) .nav-links {
-  display: unset;
+.nav-links a.active {
+  color: var(--nav-active);
 }
 
+/* Desktop: nav sits inline between site name and controls */
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
+    display: flex;
     width: auto;
-    background: none;
+    order: 0;
+    align-items: center;
+    padding-bottom: 0;
   }
 
   .nav-links a {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background: none;
+    color: var(--nav-active);
   }
 
   .menu {
@@ -76,25 +182,937 @@ h1 {
   }
 }
 
-html.dark {
-  background-color: #0d0950;
+/* ===== Page title ===== */
+
+.page-title {
+  font-size: 2rem;
+  margin: 1.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ===== Home page CTA ===== */
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: var(--primary);
+  color: var(--primary-text);
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s;
+}
+
+.cta-btn:hover {
+  background: var(--primary-dark);
+  color: var(--primary-text);
+}
+
+/* ===== Footer ===== */
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+  display: flex;
+  gap: 1rem;
+}
+
+/* ===== Shopping list ===== */
+
+.shopping-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.shopping-list-textarea {
+  width: 100%;
+  min-height: 60vh;
+  font-family: monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg-surface);
+  color: var(--text);
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.copy-btn {
+  align-self: flex-start;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  border-radius: 0.375rem;
+  background: var(--bg);
+  color: var(--primary);
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s, color 0.15s;
+}
+
+.copy-btn:hover,
+.copy-btn.copied {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+/* ===== Add to list button (recipe pages) ===== */
+
+.add-to-list-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  border-radius: 0.375rem;
+  background: var(--bg);
+  color: var(--primary);
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s, color 0.15s;
+}
+
+.add-to-list-btn:hover,
+.add-to-list-btn.in-list {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+.add-to-list-btn.in-list:hover {
+  background: var(--primary-dark);
+}
+
+/* ===== Recipe browser — view controls ===== */
+
+.view-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+.view-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  border-radius: 0.375rem;
+  background: var(--bg);
+  color: var(--primary);
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s, color 0.15s;
+}
+
+.view-btn:hover {
+  background: var(--bg-surface);
+}
+
+.view-btn.active {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+.clear-list-btn {
+  margin-left: auto;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border: 2px solid var(--danger);
+  border-radius: 0.375rem;
+  background: var(--bg);
+  color: var(--danger);
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s, color 0.15s;
+}
+
+.clear-list-btn:hover {
+  background: var(--danger);
   color: #fff;
 }
 
-.dark .menu {
-  background-color: #fff;
-  color: #000;
+/* ===== Recipe browser — tag buttons ===== */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
 }
 
-.dark .nav-links a:hover,
-.dark .nav-links a:focus {
-  color: #0d0950;
+.tag-btn {
+  padding: 0.3rem 0.85rem;
+  font-size: 0.9rem;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
 
-.dark .nav-links a {
+.tag-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.tag-btn.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+/* ===== Recipe tiles ===== */
+
+.recipe-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.recipe-tile {
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.recipe-tile:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-tile.in-list {
+  border: 4px solid var(--primary);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.tile-image-link {
+  display: block;
+}
+
+.tile-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.tile-placeholder {
+  background: var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.tile-footer {
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.tile-title {
+  font-family: 'Crimson Pro', serif;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.tile-title:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.list-toggle {
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  border: 1.5px solid var(--primary);
+  border-radius: 0.25rem;
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s, color 0.15s;
+}
+
+.list-toggle:hover {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+.list-toggle:disabled {
+  border-color: var(--border);
+  color: var(--border);
+  cursor: not-allowed;
+}
+
+/* ===== My list — recipe cards ===== */
+
+.recipe-full {
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--bg-surface);
+}
+
+.recipe-full-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.recipe-full-columns {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  align-items: stretch;
+}
+
+.recipe-full-columns.three-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.recipe-full-columns .ingredients-list {
+  margin: 0;
+  align-self: start;
+}
+
+.recipe-full-img-wrap {
+  border-radius: 6px;
+  overflow: hidden;
+  align-self: start;
+}
+
+.recipe-full-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Recipe hero image ===== */
+
+.recipe-hero-img {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ===== Ingredients list ===== */
+
+.ingredients {
+  margin: 1rem 0;
+}
+
+.ingredients h3 {
+  margin-bottom: 0.5rem;
+}
+
+.ingredients-list,
+.ingredients ul {
+  list-style: none;
+  padding: 0;
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.ingredients-list li,
+.ingredients ul li {
+  padding: 0.2rem 0;
+  color: var(--text);
+}
+
+/* ===== Recipe page — tag pills ===== */
+
+.recipe-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0;
+}
+
+.tag {
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.3em 0.9em;
+  font-size: 0.9rem;
+  background: var(--bg-surface);
+  color: var(--accent);
+}
+
+.tag a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.tag a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Recipe page — full-width app layout ===== */
+
+body.recipe-page {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+body.recipe-page header {
+  /* Reset the negative margins used when body has padding */
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* ===== Recipe browser layout ===== */
+
+.rb-layout {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Left sidebar */
+.rb-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 20px 16px;
+}
+
+.rb-sidebar-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.rb-tag-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rb-tag {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+
+.rb-tag:hover {
+  background: var(--bg);
+  color: var(--primary);
+}
+
+.rb-tag.selected {
+  background: var(--bg);
+  border-color: var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Main content area */
+.rb-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 24px;
+}
+
+/* Active filter chips row */
+.rb-topbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+/* Active filter chips */
+.rb-active-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rb-filters-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: 'Lato', sans-serif;
+}
+
+.rb-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 4px 3px 10px;
+  border-radius: 12px;
+  font-family: 'Lato', sans-serif;
+}
+
+.rb-filter-chip-x {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  padding: 0 4px;
+  border-radius: 50%;
+  font-family: 'Lato', sans-serif;
+  transition: background 0.12s, color 0.12s;
+}
+
+.rb-filter-chip-x:hover {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+/* Clear button (in drawer header) */
+.rb-clear-btn {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--danger);
+  background: transparent;
+  color: var(--danger);
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.rb-clear-btn:hover {
+  background: var(--danger);
   color: #fff;
 }
 
-.dark a {
-  color: #ff9776;
+/* Results count */
+.rb-results-count {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.rb-results-count strong {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.rb-no-results {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 2rem;
+}
+
+/* Recipe card grid */
+.rb-recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Recipe card */
+.rb-recipe-card {
+  background: var(--bg-surface);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.15s, transform 0.15s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.rb-recipe-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.rb-recipe-card.in-list {
+  border: 2px solid var(--primary);
+}
+
+/* Stretched link — covers the entire card, making it fully clickable */
+.rb-card-link {
+  display: block;
+}
+
+.rb-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+
+.rb-card-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+}
+
+.rb-card-placeholder {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background: var(--border-light);
+  color: var(--text-muted);
+  text-align: center;
+  padding: 0.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.rb-card-body {
+  padding: 12px 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rb-card-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.rb-card-tags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  flex: 1;
+  align-items: center;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.rb-card-tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text-muted);
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  flex: 1;
+}
+
+.rb-card-tag.emoji-only {
+  flex: none;
+  font-size: 16px;
+}
+
+.rb-card-tag.matched {
+  background: var(--bg-surface);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.rb-card-tag-more {
+  font-size: 16px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--bg);
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.rb-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-light);
+  position: relative;
+  z-index: 1;
+}
+
+/* Add / Added button on cards */
+.rb-add-btn {
+  padding: 6px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: var(--primary);
+  color: var(--primary-text);
+  font-family: 'Lato', sans-serif;
+  transition: background 0.12s;
+}
+
+.rb-add-btn:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.rb-add-btn.added {
+  background: #4caf7d;
+  cursor: default;
+}
+
+.rb-add-btn:disabled:not(.added) {
+  background: var(--border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+/* Right panel — always visible */
+.rb-drawer {
+  width: 280px;
+  flex-shrink: 0;
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.rb-drawer-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.rb-drawer-header h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rb-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px;
+}
+
+.rb-drawer-empty {
+  color: var(--text-muted);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+}
+
+.rb-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.rb-list-item-thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.rb-list-thumb-placeholder {
+  background: var(--border-light);
+}
+
+.rb-list-item-name {
+  font-size: 13px;
+  font-weight: 600;
+  flex: 1;
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
+  line-height: 1.3;
+}
+
+.rb-list-remove {
+  background: none;
+  border: none;
+  color: var(--border);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.12s, background 0.12s;
+}
+
+.rb-list-remove:hover {
+  color: var(--danger);
+  background: var(--bg-surface);
+}
+
+.rb-drawer-actions {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.rb-drawer-action-btn {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-family: 'Lato', sans-serif;
+  transition: background 0.15s, color 0.15s;
+  text-align: center;
+}
+
+.rb-drawer-action-btn:hover {
+  background: var(--primary);
+  color: var(--primary-text);
+}
+
+.rb-drawer-footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  flex-shrink: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Full recipe list / shopping list overlay panels */
+.rb-fullview {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.rb-fullview-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  border-bottom: 2px solid var(--border);
+  flex-shrink: 0;
+}
+
+.rb-fullview-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.rb-back-btn {
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-family: 'Lato', sans-serif;
+  transition: border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.rb-back-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.rb-fullview-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.rb-fullview-body > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }

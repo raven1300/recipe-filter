@@ -1,11 +1,12 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import AddToListButton from "../components/AddToListButton";
 
-const { frontmatter }  = Astro.props;
+const { frontmatter, recipeId } = Astro.props;
 const rawDate = frontmatter.pubDate;
 let d = rawDate instanceof Date ? rawDate : rawDate ? new Date(rawDate) : null;
 if (!d || !isFinite(d.getTime())) {
-  d = new Date(); 
+  d = new Date();
 }
 
 function ordinal(n: number) {
@@ -22,37 +23,27 @@ function ordinal(n: number) {
 const formatteddate = `${ordinal(d.getDate())} of ${d.toLocaleString("en", {month: "long"})}, ${d.getFullYear()}`;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-    <h3>{frontmatter.description}</h3>
-    <p><b>By {frontmatter.author}</b></p>
-    <p><i>{formatteddate}</i></p>
-    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <p class="recipe-meta"><b>By {frontmatter.author}</b> &mdash; <i>{formatteddate}</i></p>
+  <p>{frontmatter.description}</p>
+  <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="recipe-hero-img" />
 
-    <div class="tags">
-        {frontmatter.tags.map((tag: string) => (
-            <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-        ))}
+  <div class="recipe-tags">
+    {frontmatter.tags.map((tag: string) => (
+      <span class="tag"><a href={`/tags/${tag}`}>{tag}</a></span>
+    ))}
+  </div>
+
+  {frontmatter.ingredients && frontmatter.ingredients.length > 0 && (
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        {frontmatter.ingredients.map((ing: string) => <li>{ing}</li>)}
+      </ul>
     </div>
+  )}
 
-    <br>
-    <slot />
+  {recipeId && <AddToListButton recipeId={recipeId} client:load />}
+
+  <br>
+  <slot />
 </BaseLayout>
-
-<style>
-    a {
-        color: #00539F;
-    }
-
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .tag {
-        margin: 0.25em;
-        border: dotted 1px #cf1313;
-        border-radius: .5em;
-        padding: .5em 1em;
-        font-size: 1.15em;
-        background-color: #a3aeb0;
-    }
-</style>

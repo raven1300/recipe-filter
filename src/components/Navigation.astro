@@ -1,8 +1,8 @@
 ---
+const { pathname } = Astro.url;
 ---
 <div id="main-menu" class="nav-links">
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <a href="/tags/">Tags</a>
+    <a href="/" class={pathname === '/' ? 'active' : ''}>Home</a>
+    <a href="/about/" class={pathname.startsWith('/about') ? 'active' : ''}>About</a>
+    <a href="/recipes/" class={pathname.startsWith('/recipes') ? 'active' : ''}>Recipes</a>
 </div>
