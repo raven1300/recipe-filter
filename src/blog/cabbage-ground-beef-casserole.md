@@ -12,8 +12,8 @@ ingredients:
   - 2 tablespoons olive oil (plus extra for greasing)
   - 1 medium onion, chopped
   - 1 garlic clove, minced
-  - 450g lean ground beef
-  - 1 medium green pepper, chopped
+  - 450g lean beef mince
+  - 1 medium green capsicum, chopped
   - salt 
   - black pepper
   - 1 can diced tomatoes (400g)

@@ -17,6 +17,7 @@ const blog = defineCollection({
       tags: z.array(z.string()),
       shortName: z.string(),
       ingredients: z.array(z.string()),
+      source: z.string().optional(),
     })
 });
 // Export a single `collections` object to register your collection(s)

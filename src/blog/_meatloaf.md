@@ -11,7 +11,7 @@ shortName: Classic Meatloaf
 ingredients:
   - 1 cup panko breadcrumbs
   - 1 large onion, grated
-  - 1 kg (2 lb) ground beef
+  - 1 kg (2 lb) beef mince
   - 2 eggs
   - 3 garlic cloves, minced
   - 1 tsp Worcestershire sauce
@@ -23,6 +23,7 @@ ingredients:
   - ½ cup tomato ketchup (for glaze)
   - 2 tbsp cider vinegar (for glaze)
   - 1 tbsp brown sugar (for glaze)
+source: ""
 ---
 
 ## Method

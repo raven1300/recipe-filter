@@ -15,16 +15,17 @@ ingredients:
   - 1/2 red onion, diced
   - 225g chicken, diced
   - 170g turkey sausage, sliced
-  - 1 bell pepper, diced
+  - 1 capsicum, diced
   - 2 stalks celery, diced
   - 1 cup cherry tomatoes, halved
   - 225g raw shrimp, peeled and deveined
   - 1/2 cup tomato sauce
   - 2 tbsp tomato paste
-  - 1 cup chicken broth
+  - 1 cup chicken stock
   - 2 bay leaves
   - Cajun seasoning, sea salt, and pepper to taste
   - Green onions for garnish
+source: ""
 ---
 
 ## Method

@@ -11,7 +11,7 @@ shortName: Mexican Cauli Rice
 ingredients:
   - 1 small head cauliflower (approximately 4 cups processed)
   - 1 onion, finely diced
-  - 1 garlic clove, crushed
+  - 1 garlic clove, minced
   - 1 teaspoon olive oil
   - ¼ teaspoon salt
   - 2 cups chopped tomatoes
@@ -20,6 +20,7 @@ ingredients:
   - 1 tablespoon lime juice
   - ¼ cup fresh cilantro, chopped
   - pinch of cayenne pepper
+source: ""
 ---
 
 ## Method

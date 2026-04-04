@@ -18,13 +18,13 @@ ingredients:
   - 20g (4 tsp) ginger purée
   - 20g (4 tsp) garlic purée
   - Red chili flakes, black pepper & sesame seeds to taste
-  - Splash of bone broth or water
+  - Splash of chicken stock or water
   - 480g (2½ cups) short grain rice (dry weight)
   - Green onions, to garnish
   - Sesame seeds, to garnish
 ---
 
-[Video recipe](https://www.youtube.com/watch?v=i8YjY43xN0Q)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i8YjY43xN0Q" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

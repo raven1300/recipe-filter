@@ -19,12 +19,13 @@ ingredients:
   - 1 cup vegetable stock
   - 2 medium potatoes, cubed (optional, omit for strict low-carb)
   - 2 carrots, sliced
-  - 1 bell pepper (or zucchini, squash, or eggplant), sliced
+  - 1 capsicum (or zucchini, squash, or eggplant), sliced
   - Sea salt and pepper to taste
   - 1 head cauliflower, riced
   - 1 tsp oil
   - 1 clove garlic, minced
   - 2 green onions, sliced
+source: ""
 ---
 
 ## Method

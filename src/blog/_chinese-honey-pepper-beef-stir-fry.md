@@ -19,6 +19,7 @@ ingredients:
   - 1 garlic clove, minced
   - ½ onion, sliced
   - 500g/1 lb thinly sliced beef (tenderloin, flank, sirloin, or similar)
+source: ""
 ---
 
 ## Method

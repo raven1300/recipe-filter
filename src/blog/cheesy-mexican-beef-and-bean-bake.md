@@ -11,9 +11,9 @@ shortName: Mexican Beef Bake
 ingredients:
   - 2 tbsp olive oil
   - 1 red onion, finely chopped
-  - 2 garlic cloves, finely minced
-  - 1 green capsicum/bell pepper, cut into 1cm cubes
-  - 500g beef mince (ground beef)
+  - 2 garlic cloves, minced
+  - 1 green capsicum/capsicum, cut into 1cm cubes
+  - 500g beef mince
   - 400g can red kidney beans or black beans, drained
   - 1 cup tomato passata
   - ⅓ cup pickled sliced jalapeño
@@ -25,7 +25,10 @@ ingredients:
   - 1 tsp dried oregano
   - ½ tsp cayenne pepper
   - 1 tsp cooking/kosher salt
+source: "https://www.recipetineats.com/cheesy-mexican-beef-bean-bake/"
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ERoiA2wsAXs" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

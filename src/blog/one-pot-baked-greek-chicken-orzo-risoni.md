@@ -19,11 +19,11 @@ ingredients:
   - 0.5 tsp black pepper
   - 1 small onion, finely chopped
   - 2 medium zucchini, cubed
-  - 1 red bell pepper, cubed
-  - 2.5 cups chicken broth
+  - 1 red capsicum, cubed
+  - 2.5 cups chicken stock
   - 400g canned crushed tomatoes
   - 1 tbsp tomato paste
-  - 1.5 cups orzo/risoni
+  - 1.5 cups risoni
   - 1.5 cups cherry tomatoes
   - 0.5 cup crumbled feta cheese
   - Fresh oregano, optional garnish

@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "/images/air-fry-chicken.png"
     alt: "Crispy air fryer chicken strips and potato wedges"
-tags: ["chicken", "air fryer", "add veg"]
+tags: ["chicken", "air fryer", "add more veg"]
 shortName: Air Fryer Chicken
 ingredients:
   - 500g potato wedges
@@ -22,7 +22,7 @@ ingredients:
   - 50g breadcrumbs 
 ---
 
-[Video recipe](https://www.youtube.com/watch?v=NF8bDCckleo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NF8bDCckleo" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

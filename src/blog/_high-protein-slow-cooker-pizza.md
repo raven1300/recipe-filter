@@ -10,7 +10,7 @@ tags: ["beef", "slow cooker", "pasta", "Italian"]
 shortName: Slow Cooker Pizza
 ingredients:
   - 3 cups pasta (224g dry)
-  - 450g ground beef or lean ground turkey
+  - 450g beef mince or lean ground turkey
   - 1-2 servings pepperoni slices (optional)
   - 6 large egg whites
   - vegetables of your choice, chopped
@@ -18,6 +18,7 @@ ingredients:
   - 2 teaspoons Italian seasoning
   - 2 teaspoons minced garlic
   - 225g reduced-fat or fat-free pizza cheese
+source: ""
 ---
 
 ## Method

@@ -16,7 +16,8 @@ ingredients:
   - 1/2 onion, diced
   - 1 tbsp taco or fajita seasoning blend
   - 1/2 cup enchilada sauce
-  - Spray oil
+  - olive oil
+source: ""
 ---
 
 ## Method

@@ -10,7 +10,7 @@ tags: ["beef", "baked", "low carb", "casserole"]
 shortName: Cauli Pie
 ingredients:
   - 2 lb cauliflower (900g – 1kg)
-  - 1½ lb ground beef (700g)
+  - 1½ lb beef mince (700g)
   - 1 onion, diced
   - 1 carrot, diced
   - 2 Tbsp olive oil (30ml)
@@ -27,7 +27,7 @@ ingredients:
   - 1 tsp xanthan gum
 ---
 
-[Video recipe](https://www.youtube.com/watch?v=Hwp7lSklRNI)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hwp7lSklRNI" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

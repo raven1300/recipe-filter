@@ -21,7 +21,7 @@ ingredients:
   - ½ onion, chopped
   - ¼ cup dry white wine
   - ¼ cup tomato paste
-  - 1¼ cups risoni/orzo, uncooked
+  - 1¼ cups risoni, uncooked
   - 400g canned chickpeas, drained
   - 3 cups chicken stock
   - ¾ cup heavy cream
@@ -29,6 +29,7 @@ ingredients:
   - 150g baby spinach
   - ⅓ cup sun-dried tomatoes, chopped
   - 2 tbsp basil, chopped
+source: ""
 ---
 
 ## Method

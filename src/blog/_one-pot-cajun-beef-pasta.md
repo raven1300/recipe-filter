@@ -10,12 +10,12 @@ tags: ["beef", "one pot", "pasta"]
 shortName: Cajun Beef Pasta
 ingredients:
   - 1 tbsp olive oil
-  - 2 garlic cloves, finely minced
+  - 2 garlic cloves, minced
   - 1 onion, chopped
-  - 500g beef mince (ground beef)
+  - 500g beef mince (beef mince)
   - 1 medium carrot, shredded
   - 1 medium zucchini, shredded
-  - 1 red capsicum (bell pepper), chopped
+  - 1 red capsicum (capsicum), chopped
   - 2 tbsp tomato paste
   - 800g canned crushed tomato
   - 400g kidney beans, drained
@@ -31,6 +31,7 @@ ingredients:
   - 0.5 tsp cayenne pepper
   - 0.25 tsp black pepper
   - 1.25 tsp salt
+source: ""
 ---
 
 ## Method

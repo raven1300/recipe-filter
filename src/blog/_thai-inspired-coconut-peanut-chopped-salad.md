@@ -12,7 +12,7 @@ ingredients:
   - 1 rotisserie chicken (white meat only)
   - 2 cups cabbage, shredded
   - 1 cup carrots, shredded
-  - 1 red bell pepper, thinly sliced
+  - 1 red capsicum, thinly sliced
   - 1/2 cup cucumber, diced
   - 1/4 cup fresh cilantro
   - 1/4 cup green onions, sliced
@@ -24,6 +24,7 @@ ingredients:
   - 1 tsp sriracha (optional)
   - Water to thin dressing as needed
   - Chopped peanuts for garnish
+source: ""
 ---
 
 ## Method

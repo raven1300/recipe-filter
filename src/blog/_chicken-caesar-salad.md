@@ -10,7 +10,7 @@ tags: ["chicken", "salad"]
 shortName: Caesar Salad
 ingredients:
   - 1 cup mayonnaise
-  - ½ tsp garlic, finely minced
+  - ½ tsp garlic, minced
   - 2 anchovy fillets (or ¾ tsp anchovy paste)
   - 2 tbsp fresh lemon juice
   - 1 tsp Dijon mustard
@@ -26,6 +26,7 @@ ingredients:
   - 10 cups cos/romaine lettuce
   - Freshly grated parmesan for garnish
   - 500g chicken breast fillets (optional)
+source: ""
 ---
 
 ## Method

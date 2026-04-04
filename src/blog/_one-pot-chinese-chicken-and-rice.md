@@ -16,7 +16,7 @@ ingredients:
   - 500g (1 lb) chicken thighs, skinless boneless, halved
   - 1 big bunch Chinese broccoli, thick stems separated from leafy parts
   - 1 cup (180g) uncooked white rice
-  - 1½ cups (375 ml) low-salt chicken broth
+  - 1½ cups (375 ml) low-salt chicken stock
   - 2 cloves garlic, small, chopped (for sauce)
   - 2 tbsp Chinese cooking wine or Mirin
   - 3 tbsp oyster sauce
@@ -24,6 +24,7 @@ ingredients:
   - ¼ tsp white pepper
   - Green onion, sliced, to serve
   - Sesame seeds, to serve
+source: ""
 ---
 
 ## Method

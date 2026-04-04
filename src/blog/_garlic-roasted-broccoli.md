@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://paleogrubs.com/wp-content/uploads/2013/10/roastedbroccoli.jpg"
     alt: "Golden roasted broccoli florets on a baking sheet"
-tags: ["vegetarian", "bake", "sidedish"]
+tags: ["vegetarian", "baked", "sidedish"]
 shortName: Garlic Roasted Broccoli
 ingredients:
   - 1 head broccoli, cut into bite-sized florets
@@ -15,6 +15,7 @@ ingredients:
   - salt and pepper to taste
   - juice of 1 lemon
   - red pepper flakes (optional)
+source: ""
 ---
 
 ## Method

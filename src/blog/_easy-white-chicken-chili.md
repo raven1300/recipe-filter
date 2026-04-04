@@ -13,7 +13,7 @@ ingredients:
   - 2-3 cloves garlic, minced
   - 1 tablespoon olive oil
   - 1.35kg chicken breast
-  - 950ml bone broth
+  - 950ml chicken stock
   - 110g green chiles, diced
   - 110g jalapeños, diced
   - 2 cups corn (canned or frozen)
@@ -26,6 +26,7 @@ ingredients:
   - 2 cans white beans (Great Northern, 435g each, drained and rinsed)
   - 1 container Greek yogurt (150g / 5.3 oz)
   - 110g cream cheese
+source: ""
 ---
 
 ## Method

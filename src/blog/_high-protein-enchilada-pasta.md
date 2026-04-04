@@ -18,6 +18,7 @@ ingredients:
   - 310g no-salt-added whole kernel corn, drained
   - 900g cooked chicken breast (or alternative protein)
   - 1 cup reduced-fat cheddar cheese
+source: ""
 ---
 
 ## Method

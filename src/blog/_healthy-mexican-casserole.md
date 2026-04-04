@@ -6,14 +6,14 @@ author: Raven
 image:
     url: "https://media.theproteinchef.co/wp-content/uploads/2024/09/Healthy-Mexican-Casserole-Recipe.jpg"
     alt: "Mexican casserole with melted cheese and colorful peppers"
-tags: ["beef", "Mexican", "bake"]
+tags: ["beef", "Mexican", "baked"]
 shortName: Mexican Casserole
 ingredients:
   - 1 tablespoon oil
   - 680g lean ground meat (turkey, beef, or chicken — 93/7 used)
-  - 1 green bell pepper, chopped
-  - 1 yellow bell pepper, chopped
-  - 1 red bell pepper, chopped
+  - 1 green capsicum, chopped
+  - 1 yellow capsicum, chopped
+  - 1 red capsicum, chopped
   - ½ red onion, chopped
   - 2 teaspoons minced garlic
   - 1½ tablespoons chili powder
@@ -25,6 +25,7 @@ ingredients:
   - 6 mini tortillas (about 25 calories each)
   - ½ can low sodium refried beans (225g)
   - 1 cup Mexican cheese blend
+source: ""
 ---
 
 ## Method

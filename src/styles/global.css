@@ -531,6 +531,13 @@ footer {
   display: block;
 }
 
+.recipe-source {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
 /* ===== Ingredients list ===== */
 
 .ingredients {
@@ -630,6 +637,29 @@ body.recipe-page header {
   font-family: 'Lato', sans-serif;
 }
 
+.rb-tag-section {
+  padding-top: 10px;
+  margin-top: 2px;
+  border-top: 1px solid var(--border-light);
+}
+
+.rb-tag-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.rb-tag-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  font-family: 'Lato', sans-serif;
+  opacity: 0.6;
+}
+
 .rb-tag-list {
   display: flex;
   flex-direction: column;
@@ -639,7 +669,7 @@ body.recipe-page header {
 .rb-tag {
   display: block;
   width: 100%;
-  padding: 8px 12px;
+  padding: 6px 12px;
   text-transform: capitalize;
   border-radius: 8px;
   font-size: 13px;
@@ -851,6 +881,7 @@ body.recipe-page header {
   gap: 4px;
   flex: 1;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   min-width: 0;
 }
@@ -863,6 +894,8 @@ body.recipe-page header {
   color: var(--text-muted);
   font-weight: 500;
   font-family: 'Lato', sans-serif;
+  position: relative;
+  z-index: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -896,7 +929,7 @@ body.recipe-page header {
 
 .rb-card-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-top: 8px;
   border-top: 1px solid var(--border-light);
   position: relative;
@@ -906,6 +939,7 @@ body.recipe-page header {
 /* Add / Added button on cards */
 .rb-add-btn {
   padding: 6px 14px;
+  width: 66%;
   border-radius: 7px;
   font-size: 13px;
   font-weight: 600;

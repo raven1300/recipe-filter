@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "/images/Butter-Chicken_5.webp"
     alt: "Butter chicken in a creamy orange sauce served with naan bread"
-tags: ["chicken", "Indian", "curry", "stovetop", "add veg"]
+tags: ["chicken", "Indian", "curry", "stovetop", "add more veg"]
 shortName: Butter Chicken
 ingredients:
   - 750g / 1.5 lb chicken thighs, boneless skinless, cut into bite-size pieces

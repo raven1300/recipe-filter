@@ -6,14 +6,14 @@ author: Raven
 image:
     url: "https://paleogrubs.com/wp-content/uploads/2019/05/5a-mexican-ground-beef-paleo-casserole-1024x1024.jpg"
     alt: "Mexican ground beef casserole in a baking dish"
-tags: ["beef", "Mexican", "bake"]
+tags: ["beef", "Mexican", "baked"]
 shortName: Mexican Beef Casserole
 ingredients:
   - 2 tablespoons olive oil
   - 1 medium onion, chopped
   - 2 garlic cloves, minced
-  - 450g lean ground beef
-  - 1 medium bell pepper, chopped
+  - 450g lean beef mince
+  - 1 medium capsicum, chopped
   - ½ jalapeño, sliced
   - 1 teaspoon ground cumin
   - 1 teaspoon chili powder
@@ -26,6 +26,7 @@ ingredients:
   - 1 tablespoon nutritional yeast
   - 1 scallion, sliced (optional)
   - salt and black pepper to taste
+source: ""
 ---
 
 ## Method

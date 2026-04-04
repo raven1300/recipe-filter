@@ -19,8 +19,8 @@ ingredients:
   - 2 eggs, lightly whisked
   - 2 tbsp neutral oil (peanut, vegetable, or canola)
   - ½ onion, finely diced
-  - 2 garlic cloves, finely minced
-  - 250g / 8 oz beef mince (ground beef)
+  - 2 garlic cloves, minced
+  - 250g / 8 oz beef mince (beef mince)
   - 2 cups frozen diced carrots, peas, and corn
   - 3 cups day-old cooked rice
   - ½ cup finely sliced green onions

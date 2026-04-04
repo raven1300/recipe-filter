@@ -25,8 +25,8 @@ ingredients:
   - 30g (¼ cup) cheddar powder
   - 120g (½ cup) red enchilada sauce
   - 150g (⅔ cup) 1% milk
-  - 2 orange bell peppers
-  - 2 red bell peppers
+  - 2 orange capsicums
+  - 2 red capsicums
   - 1 onion
   - Chopped cilantro, to garnish
 ---

@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://media.theproteinchef.co/wp-content/uploads/2020/03/Leftover-Turkey-or-Chicken-Casserole-Recipe.jpg"
     alt: "Baked chicken casserole with stuffing topping and broccoli"
-tags: ["chicken", "bake"]
+tags: ["chicken", "baked"]
 shortName: Turkey Chicken Casserole
 ingredients:
   - 9 ounces cooked turkey or chicken
@@ -17,6 +17,7 @@ ingredients:
   - 2½ servings stuffing mix
   - 4 ounces hot water
   - 1-2 tablespoons bacon bits (optional)
+source: ""
 ---
 
 ## Method

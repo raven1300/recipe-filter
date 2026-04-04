@@ -93,17 +93,40 @@ export default function RecipeBrowser({ recipes }) {
       {/* Left sidebar — tag filters */}
       <aside class="rb-sidebar">
         <div class="rb-sidebar-title">Filters</div>
-        <div class="rb-tag-list">
-          {allTags.map(tag => (
-            <button
-              key={tag}
-              onClick={() => toggleTag(tag)}
-              class={`rb-tag${selectedTags.has(tag) ? ' selected' : ''}`}
-            >
-              {tagLabel(tag)}
-            </button>
-          ))}
-        </div>
+        {(() => {
+          const sections = [
+            { label: 'Protein',  tags: ['chicken', 'beef', 'pork', 'sausage', 'turkey', 'eggs'] },
+            { label: 'Method',   tags: ['baked', 'slow cooker', 'one pot', 'stir fry', 'stovetop', 'air fryer'] },
+            { label: 'Cuisine',  tags: ['Asian', 'Indian', 'Italian', 'Mediterranean', 'Mexican', 'Thai'] },
+            { label: 'Dish',     tags: ['pasta', 'rice', 'salad', 'soup', 'curry', 'chili', 'casserole', 'wraps', 'breakfast', 'sidedish', 'dinner party'] },
+            { label: 'Diet',     tags: ['vegetarian', 'low carb', 'add more veg'] },
+          ];
+          const knownTags = new Set(sections.flatMap(s => s.tags));
+          const otherTags = allTags.filter(t => !knownTags.has(t));
+          const allSections = otherTags.length > 0
+            ? [...sections, { label: 'Other', tags: otherTags }]
+            : sections;
+          return allSections.map(section => {
+            const sectionTags = section.tags.filter(t => allTags.includes(t));
+            if (sectionTags.length === 0) return null;
+            return (
+              <div key={section.label} class="rb-tag-section">
+                <div class="rb-tag-section-label">{section.label}</div>
+                <div class="rb-tag-list">
+                  {sectionTags.map(tag => (
+                    <button
+                      key={tag}
+                      onClick={() => toggleTag(tag)}
+                      class={`rb-tag${selectedTags.has(tag) ? ' selected' : ''}`}
+                    >
+                      {tagLabel(tag)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          });
+        })()}
       </aside>
 
       {/* Main content */}
@@ -151,17 +174,14 @@ export default function RecipeBrowser({ recipes }) {
                     <div class="rb-card-body">
                       <div class="rb-card-name">{recipe.title}</div>
                       <div class="rb-card-tags">
-                        {[...recipe.tags].sort((a, b) => selectedTags.has(b) - selectedTags.has(a)).slice(0, 3).map(tag => {
+                        {[...recipe.tags].sort((a, b) => selectedTags.has(b) - selectedTags.has(a)).map(tag => {
                           const hasEmoji = !!tagEmojis[tag];
                           return (
-                            <span key={tag} class={`rb-card-tag${selectedTags.has(tag) ? ' matched' : ''}${hasEmoji ? ' emoji-only' : ''}`}>
+                            <span key={tag} class={`rb-card-tag${selectedTags.has(tag) ? ' matched' : ''}${hasEmoji ? ' emoji-only' : ''}`} title={hasEmoji ? tag : undefined}>
                               {hasEmoji ? tagEmojis[tag] : tagLabel(tag)}
                             </span>
                           );
                         })}
-                        {recipe.tags.length > 3 && (
-                          <span class="rb-card-tag-more">+{recipe.tags.length - 3}</span>
-                        )}
                       </div>
                       <div class="rb-card-footer">
                         <button

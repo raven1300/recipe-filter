@@ -11,7 +11,7 @@ shortName: Texas Eggs
 ingredients:
   - 450g fresh pork sausage (Jimmy Dean regular roll recommended)
   - 1 yellow onion, diced
-  - 1 red bell pepper, diced
+  - 1 red capsicum, diced
   - 2-3 jalapeños, thinly sliced
   - 3 garlic cloves, minced
   - ¼ teaspoon sea salt
@@ -24,6 +24,7 @@ ingredients:
   - 110g can diced green chiles, drained
   - 4 eggs
   - optional toppings: Mexican crema, queso fresco, pickled jalapeños, avocado, cilantro
+source: ""
 ---
 
 ## Method

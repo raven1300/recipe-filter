@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://images.squarespace-cdn.com/content/v1/5c8d51add74562eedd680e87/bfb47d10-8c23-407c-bd0c-3a59646ff71e/pesto-chicken-2.jpg"
     alt: "Pesto chicken with broccoli and grape tomatoes in a skillet"
-tags: ["chicken", "one pot", "Italian", "lowcarb"]
+tags: ["chicken", "one pot", "Italian", "low carb"]
 shortName: Pesto Chicken
 ingredients:
   - 900g chicken breast tenders
@@ -16,9 +16,10 @@ ingredients:
   - 2 tablespoons avocado oil
   - 1 head broccoli (about 450g), cut into florets
   - 280g grape tomatoes
-  - ½ cup chicken broth
+  - ½ cup chicken stock
   - 2 jars basil pesto (185g each)
   - ¼ cup shredded parmesan
+source: ""
 ---
 
 ## Method

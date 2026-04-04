@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2021/07/Baked-Fried-Rice_79-SQ.jpg"
     alt: "Dump 'n Bake Fried Rice in a baking pan, fresh out of the oven"
-tags: ["baked", "rice", "Asian", "one pot", "add veg"]
+tags: ["baked", "rice", "Asian", "one pot", "add more veg"]
 shortName: Baked Fried Rice
 ingredients:
   - 1½ cups long grain white rice, uncooked

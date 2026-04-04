@@ -2,6 +2,21 @@
 
 ## What's been built
 
+### Ingredient standardisation, tag sections & UI polish (session 11)
+
+- **Ingredient terminology standardised** — bulk find-and-replace across all recipe ingredient lists: `ground beef` → `beef mince`, `chicken broth/bone broth` → `chicken stock`, `bell pepper` → `capsicum` (with colour), `orzo` → `risoni`, `spray oil` → `olive oil`, garlic descriptors normalised to `minced`
+- **Shopping list keywords** — added `"leaves"` to vegetables category (catches kaffir/makrut lime leaves); removed `"bell pepper"` and `"green pepper"` (replaced by `"capsicum"`)
+- **Tag filter sidebar grouped into sections** — Protein, Method, Cuisine, Dish, Diet; each section has a label and subtle divider; an automatic "Other" section catches any tags not in the defined sections; only visible sections are rendered
+- **Tag emojis on cards now show tooltips** — hovering an emoji badge shows the tag name; fixed z-index issue caused by stretched-link overlay
+- **Tag cap removed** — recipe cards now show all tags (previously capped at 3); badges centred
+- **"One pot" emoji** changed from 🍳 to 🍲
+- **"Add More Veg" tag** renamed from `"add veg"`
+- **Add button** — centred in card footer and widened to 66% of card width
+- **Source field** — `source:` frontmatter field added to schema (optional); renders as "Original recipe:" link on recipe pages; placeholder `source: ""` added to all draft files
+- **Video embeds** — YouTube `[Video recipe]` links converted to embedded iframes across all recipe files that had them; spacing between source link and iframe fixed (`margin-bottom: 16px`)
+- **Branch renamed** from `master` to `main`
+- **Tag data fixes** — `"bake"` → `"baked"`, `"lowcarb"` → `"low carb"` corrected in affected draft files
+
 ### UI tweaks & tag updates (session 10)
 
 - **Add to List button text** — label changed from `"Add to my list"` to `"Add this recipe to my list"` on individual recipe pages (`AddToListButton.jsx`)

@@ -13,7 +13,7 @@ ingredients:
   - 5 cups broccoli florets
   - 3 garlic cloves, minced
   - 1 medium onion, chopped
-  - 450g lean ground beef
+  - 450g lean beef mince
   - ⅓ cup paleo-friendly mayonnaise
   - 2½ tablespoons almond milk
   - 1 teaspoon arrowroot flour

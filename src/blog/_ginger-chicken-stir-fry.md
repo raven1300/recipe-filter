@@ -10,21 +10,22 @@ tags: ["chicken", "stir fry", "Asian"]
 shortName: Ginger Chicken Stir-Fry
 ingredients:
   - 680g boneless, skinless chicken breast, cut into 1.5-inch pieces
-  - Spray oil
+  - olive oil
   - 1 tbsp ginger powder or paste
   - 1 tbsp fresh cracked black or white pepper
   - 1 tbsp low-sodium tamari
   - 1 tbsp arrowroot or cornstarch
   - 450g broccoli florets
-  - 2 red bell peppers, chopped
+  - 2 red capsicums, chopped
   - 2 tbsp fresh ginger, minced
   - Green onions for garnish
   - Lime wedges (optional)
-  - 1/3 cup no-salt-added chicken broth
+  - 1/3 cup no-salt-added chicken stock
   - 2 tbsp Sriracha
   - 3 tbsp low-sodium tamari
   - 1 tbsp rice or white vinegar
   - 1 tbsp arrowroot or cornstarch
+source: ""
 ---
 
 ## Method

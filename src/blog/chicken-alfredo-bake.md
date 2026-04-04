@@ -19,7 +19,7 @@ ingredients:
   - 1 cup mozzarella, grated (100g)
 ---
 
-[Video recipe](https://www.youtube.com/watch?v=Hwp7lSklRNI&t=420)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hwp7lSklRNI?start=420" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

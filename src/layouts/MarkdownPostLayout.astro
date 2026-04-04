@@ -44,6 +44,9 @@ const formatteddate = `${ordinal(d.getDate())} of ${d.toLocaleString("en", {mont
 
   {recipeId && <AddToListButton recipeId={recipeId} client:load />}
 
-  <br>
+  {frontmatter.source && (
+    <p class="recipe-source">Original recipe: <a href={frontmatter.source} target="_blank" rel="noopener noreferrer">{frontmatter.source}</a></p>
+  )}
+
   <slot />
 </BaseLayout>

@@ -18,9 +18,9 @@ ingredients:
   - 1 tbsp (15g) butter
   - 1 large onion, cut into 1.5cm pieces
   - 2 celery ribs, cut into 1.5cm pieces
-  - 2 medium green capsicum/bell peppers, cut into 1.5cm pieces
+  - 2 medium green capsicum/capsicums, cut into 1.5cm pieces
   - 1.25 cups uncooked long grain rice
-  - 2.5 cups (625ml) low-sodium chicken broth
+  - 2.5 cups (625ml) low-sodium chicken stock
   - 200g (6.5oz) crushed canned tomato
   - 2 tbsp tomato paste
   - 1 cup sliced green onions
@@ -31,6 +31,7 @@ ingredients:
   - ½ tsp cayenne powder
   - ½ tsp black pepper
   - ½ tsp salt
+source: ""
 ---
 
 ## Method

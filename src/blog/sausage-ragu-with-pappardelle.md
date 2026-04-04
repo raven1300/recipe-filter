@@ -6,12 +6,12 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2016/02/Sausage-ragu_7-square.jpg"
     alt: "Sausage ragu pasta sauce with pappardelle in a bowl ready to be eaten"
-tags: ["sausage", "pasta", "Italian", "baked", "add veg"]
+tags: ["sausage", "pasta", "Italian", "baked", "add more veg"]
 shortName: Sausage Ragu
 ingredients:
   - 2 tbsp olive oil
   - 1 small onion, finely chopped
-  - 3 garlic cloves, finely minced
+  - 3 garlic cloves, minced
   - 1 carrot, peeled and grated
   - 2 celery stalks, grated
   - 1 tsp fennel seeds

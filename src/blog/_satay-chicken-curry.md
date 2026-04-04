@@ -23,7 +23,7 @@ ingredients:
   - 3-6 birds eye chillies, finely chopped
   - ¼ cup onion, finely diced
   - 4 garlic cloves, minced
-  - 1 cup chicken broth
+  - 1 cup chicken stock
   - ¾ cup roasted unsalted peanuts, chopped
   - 2 tsp kecap manis
   - 3 tsp dark soy sauce
@@ -32,6 +32,7 @@ ingredients:
   - 2 tbsp lime juice
   - 3 makrut lime leaves
   - 1 lemongrass stalk
+source: ""
 ---
 
 ## Method

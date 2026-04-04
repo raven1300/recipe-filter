@@ -10,7 +10,7 @@ tags: ["sausage", "rice", "one pot"]
 shortName: Sausage and Rice
 ingredients:
   - 3 tbsp extra virgin olive oil
-  - 5 garlic cloves, finely minced
+  - 5 garlic cloves, minced
   - 2 medium onions, chopped
   - 1 yellow capsicum, cut into 1.5cm squares
   - 1 red capsicum, cut into 1.5cm squares
@@ -22,6 +22,7 @@ ingredients:
   - 2½ cups chicken stock
   - 2 cups frozen peas, thawed
   - 2 tbsp parsley, chopped (optional)
+source: ""
 ---
 
 ## Method

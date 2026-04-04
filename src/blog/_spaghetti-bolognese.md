@@ -12,7 +12,7 @@ ingredients:
   - 1½ tbsp olive oil
   - 2 garlic cloves, minced
   - 1 onion, finely chopped
-  - 1 lb/500g beef mince (ground beef)
+  - 1 lb/500g beef mince (beef mince)
   - ½ cup (125 ml) dry red wine
   - 2 beef bouillon cubes
   - 800g/28 oz canned crushed tomato
@@ -25,6 +25,7 @@ ingredients:
   - ½ tsp black pepper
   - 400g/13 oz spaghetti
   - Parmesan cheese and parsley for garnish
+source: ""
 ---
 
 ## Method

@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://media.theproteinchef.co/wp-content/uploads/2020/03/Quinoa-Chicken-Parmesan-Recipe.jpg"
     alt: "Baked quinoa chicken parmesan with melted cheese on top"
-tags: ["chicken", "bake", "Italian"]
+tags: ["chicken", "baked", "Italian"]
 shortName: Quinoa Chicken Parm
 ingredients:
   - 680g chicken breast, diced
@@ -25,6 +25,7 @@ ingredients:
   - 1 cup fat-free or reduced-fat mozzarella cheese
   - ⅓ cup whole wheat bread crumbs
   - ½ cup grated parmesan and romano cheese
+source: ""
 ---
 
 ## Method

@@ -11,7 +11,7 @@ shortName: Sausage Ragu
 ingredients:
   - 2 tbsp olive oil
   - 1 small onion, finely chopped
-  - 3 garlic cloves, finely minced
+  - 3 garlic cloves, minced
   - 1 carrot, peeled and grated
   - 2 celery stalks, grated
   - 1 tsp fennel seeds
@@ -29,6 +29,7 @@ ingredients:
   - 500g pappardelle pasta
   - Parmesan or parmigiano reggiano, grated
   - Parsley, chopped (optional garnish)
+source: ""
 ---
 
 ## Method

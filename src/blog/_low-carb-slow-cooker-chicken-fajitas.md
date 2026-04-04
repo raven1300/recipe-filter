@@ -9,13 +9,14 @@ image:
 tags: ["chicken", "slow cooker", "Mexican"]
 shortName: Slow Cooker Fajitas
 ingredients:
-  - 20 ounces fajita vegetables (frozen or fresh bell peppers and onion)
+  - 20 ounces fajita vegetables (frozen or fresh capsicums and onion)
   - 1.35kg chicken breast
   - ½ packet taco or fajita seasoning mix
   - 1 ounce lime juice
   - 1 tablespoon honey
   - 1 tablespoon minced garlic
   - 14.5 ounces diced tomatoes
+source: ""
 ---
 
 ## Method

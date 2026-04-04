@@ -14,7 +14,7 @@ ingredients:
   - ½ onion, diced
   - 250g (8oz) chicken thigh or breast, cut into bite-size pieces
   - 2.5 cups frozen diced vegetables (carrots, peas, corn, peppers)
-  - 1.5 cups orzo/risoni, uncooked
+  - 1.5 cups risoni, uncooked
   - 1.5 tbsp flour
   - 2.25 cups milk
   - 2 cups chicken or vegetable stock
@@ -23,6 +23,7 @@ ingredients:
   - ¼ tsp salt
   - ¼ tsp black pepper
   - Additional parmesan and parsley for garnish
+source: ""
 ---
 
 ## Method

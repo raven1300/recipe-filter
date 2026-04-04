@@ -21,12 +21,12 @@ ingredients:
   - 4 bacon slices, cooked and crumbled
   - 1 tablespoon fresh parsley, chopped
   - salt and black pepper to taste
-source: ""
+source: "https://paleogrubs.com/cauliflower-ground-beef-casserole"
 ---
 
 ## Method
 
-1. Heat olive oil in a large skillet over medium heat. Sauté onion for 5 minutes, stirring occasionally.
+1. Heat spray oil in a large skillet over medium heat. Sauté onion for 5 minutes, stirring occasionally.
 
 2. Add garlic and cook for 30 seconds.
 

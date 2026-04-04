@@ -13,7 +13,7 @@ export const categories = {
       "onion", "tomato", "carrot", "celery", "spinach", "courgette",
       "corn", "broccoli", "capsicum", "zucchini", "cauliflower", "cabbage",
       "lettuce", "potato", "squash", "kale", "scallion", "shallot", "green bean",
-      "jalapeño", "jalapeno", "green chile", "pineapple", "bell pepper", "green pepper",
+      "jalapeño", "jalapeno", "green chile", "pineapple", "leaves",
     ],
     exclude: ["tomato paste", "tomato puree", "tinned tomatoes", "mixed vegetables", "frozen", "canned crushed tomatoes", "cornstarch"],
   },

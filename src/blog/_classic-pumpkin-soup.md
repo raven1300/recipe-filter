@@ -12,10 +12,11 @@ ingredients:
   - 1.2 kg pumpkin (any type) or butternut squash, unpeeled
   - 1 onion, sliced
   - 2 garlic cloves, peeled whole
-  - 3 cups vegetable or chicken broth, low sodium
+  - 3 cups vegetable or chicken stock, low sodium
   - 1 cup water
   - Salt and pepper
   - ½–¾ cup cream, half and half, or milk
+source: ""
 ---
 
 ## Method

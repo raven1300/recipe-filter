@@ -31,7 +31,7 @@ export const tagEmojis = {
   baked:         '🔥',
   'stir fry':    '🥢',
   'slow cooker': '⏱️',
-  'one pot':     '🍳',
+  'one pot':     '🍲',
   stovetop:      '🍳',
   'air fryer':   '💨',
   wraps:         '🌯',
@@ -51,7 +51,7 @@ export const tagEmojis = {
   // Dietary
   'low carb':       '💪',
   vegetarian:    '🥦',
-  'add veg':     '🥦',
+  'add more veg': '🥦',
   healthy:       '✅',
 
   // Meal type

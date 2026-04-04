@@ -16,13 +16,14 @@ ingredients:
   - 500g (1 lb) chicken thigh, cut into bite-size pieces
   - 2.5 tbsp flour (or 1½ tbsp cornstarch)
   - 2 cups (500 ml) milk
-  - 2 cups (500 ml) chicken broth
+  - 2 cups (500 ml) chicken stock
   - 1¼ cups (225g) long grain white rice, uncooked
   - 1 tsp dried thyme
   - Salt and pepper
   - 1 large head broccoli, cut into small florets (~400-500g)
   - 2 cups (200g) shredded mozzarella or cheddar
   - Finely chopped parsley, optional
+source: ""
 ---
 
 ## Method

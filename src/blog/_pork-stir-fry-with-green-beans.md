@@ -20,6 +20,7 @@ ingredients:
   - 1 tsp sugar
   - 1½ tsp chilli garlic sauce
   - Rice and sliced red chilli, to serve
+source: ""
 ---
 
 ## Method

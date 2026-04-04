@@ -24,7 +24,8 @@ ingredients:
   - ½ teaspoon black pepper
   - 2 tablespoons BBQ sauce
   - ½ white onion, chopped
-  - 950ml chicken bone broth
+  - 950ml chicken stock
+source: ""
 ---
 
 ## Method

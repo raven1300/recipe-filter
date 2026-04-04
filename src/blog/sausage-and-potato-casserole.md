@@ -12,8 +12,8 @@ ingredients:
   - 1 tablespoon olive oil
   - 450g mild Italian sausages
   - 1 onion, thinly sliced
-  - 1 red bell pepper, thinly sliced
-  - 1 yellow bell pepper, thinly sliced
+  - 1 red capsicum, thinly sliced
+  - 1 yellow capsicum, thinly sliced
   - 8-10 small red potatoes, diced
   - 3 cloves garlic, minced
   - 1 can crushed tomatoes (800g)
