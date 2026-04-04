@@ -29,7 +29,7 @@ export default function AddToListButton({ recipeId }) {
 
   return (
     <button onClick={toggle} class={`add-to-list-btn${inList ? ' in-list' : ''}`}>
-      {inList ? 'Remove from my list' : 'Add to my list'}
+      {inList ? 'Remove from my list' : 'Add this recipe to my list'}
     </button>
   );
 }

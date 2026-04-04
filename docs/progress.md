@@ -2,6 +2,17 @@
 
 ## What's been built
 
+### UI tweaks & tag updates (session 10)
+
+- **Add to List button text** — label changed from `"Add to my list"` to `"Add this recipe to my list"` on individual recipe pages (`AddToListButton.jsx`)
+- **My List items are now links** — each tile in the My List panel is now a clickable link to the recipe page, while the `×` remove button still works independently; styled in `global.css` with hover underline
+- **Tag emojis** — added emojis for `air fryer`, `wraps`, and `dinner party` in `src/data/tagConfig.js`
+
+### New recipes, UI tweaks & My List links (session 9)
+
+- **Recipe images** — thumbnail images added to `public/images/` for all three new recipes (`cauli-cottage.png`, `alfredo-bake.png`, `air-fry-chicken.png`)
+- **Video links** — YouTube video links added to the body of Cauliflower Cottage Pie, Chicken Alfredo Bake, Air Fryer Crispy Chicken and Wedges, and Peanut Miso Chicken Rice Bowls
+
 ### PDF import, UI polish & data quality (session 8)
 
 - **PDF recipe extraction** — 5 recipes extracted from a slow cooker PDF cookbook and created as draft markdown files: Queso Chicken Mac N' Cheese, Peanut Miso Chicken Rice Bowls, Pineapple Teriyaki Pulled Pork Rice Bowls, Green Enchilada Chicken & Rice Soup, Frozen Cheesy Chicken & Rice Burritos

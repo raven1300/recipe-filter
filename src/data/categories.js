@@ -15,7 +15,7 @@ export const categories = {
       "lettuce", "potato", "squash", "kale", "scallion", "shallot", "green bean",
       "jalapeño", "jalapeno", "green chile", "pineapple", "bell pepper", "green pepper",
     ],
-    exclude: ["tomato paste", "tomato puree", "tinned tomatoes", "mixed vegetables", "frozen", "canned crushed tomatoes"],
+    exclude: ["tomato paste", "tomato puree", "tinned tomatoes", "mixed vegetables", "frozen", "canned crushed tomatoes", "cornstarch"],
   },
   "meats": {
     keywords: [
@@ -28,8 +28,9 @@ export const categories = {
     keywords: [
       "parmesan", "cream", "butter", "milk", "egg whites", "cheese", "cheddar",
       "eggs", "yoghurt", "mayo", "mayonaise", "feta", "chorizo", "yogurt", "ricotta",
+      "egg yolks", "mozzarella", "egg",
     ],
-    exclude: [],
+    exclude: ["peanut butter"],
   },
   "pasta & grains": {
     keywords: [
@@ -52,7 +53,8 @@ export const categories = {
       "turmeric", "garam masala", "curry powder", "cayenne", "chili powder",
       "cardamom", "cinnamon", "star anise", "bay", "ginger", "galangal",
       "lemongrass", "fennel", "sage", "parsley", "cilantro", "chives",
-      "tamarind", "sesame seed", "mustard seed", "broth", "garlic",
+      "tamarind", "sesame seed", "mustard seed", "broth", "garlic", "nutmeg",
+      "mixed herbs", "cornstarch",
     ],
     exclude: [],
   },
@@ -62,7 +64,7 @@ export const categories = {
       "ketchup", "bbq sauce", "oyster sauce", "worcestershire", "sriracha",
       "hot sauce", "tamari", "kecap manis", "mirin", "cooking wine",
       "mustard", "tahini", "wine", "miso", "marinara", "pizza sauce", "enchilada sauce",
-      "tomato paste", "tomato puree", "passata",
+      "tomato paste", "tomato puree", "passata", "peanut butter",
     ],
     exclude: [],
   },

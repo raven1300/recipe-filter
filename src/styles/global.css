@@ -985,6 +985,19 @@ body.recipe-page header {
   margin-bottom: 8px;
 }
 
+.rb-list-item-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.rb-list-item-link:hover .rb-list-item-name {
+  text-decoration: underline;
+}
+
 .rb-list-item-thumb {
   width: 36px;
   height: 36px;
@@ -1000,7 +1013,6 @@ body.recipe-page header {
 .rb-list-item-name {
   font-size: 13px;
   font-weight: 600;
-  flex: 1;
   color: var(--text);
   font-family: 'Lato', sans-serif;
   line-height: 1.3;

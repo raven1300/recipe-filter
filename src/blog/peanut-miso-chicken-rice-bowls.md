@@ -24,6 +24,8 @@ ingredients:
   - Sesame seeds, to garnish
 ---
 
+[Video recipe](https://www.youtube.com/watch?v=i8YjY43xN0Q)
+
 ## Method
 
 1. Prepare the peanut miso sauce by combining peanut butter, white miso paste, soy sauce, maple syrup, rice vinegar, ginger purée, garlic purée, red chili flakes, black pepper, and sesame seeds in a bowl. Mix until a smooth paste forms.

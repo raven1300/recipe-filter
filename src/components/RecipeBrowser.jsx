@@ -193,11 +193,13 @@ export default function RecipeBrowser({ recipes }) {
             ? <p class="rb-drawer-empty">No recipes added yet.<br />Browse and click + Add to save recipes here.</p>
             : myListRecipes.map(recipe => (
                 <div key={recipe.id} class="rb-list-item">
-                  {recipe.image?.url
-                    ? <img src={recipe.image.url} alt="" class="rb-list-item-thumb" />
-                    : <div class="rb-list-item-thumb rb-list-thumb-placeholder" />
-                  }
-                  <span class="rb-list-item-name">{recipe.title}</span>
+                  <a href={`/recipes/${recipe.id}/`} class="rb-list-item-link">
+                    {recipe.image?.url
+                      ? <img src={recipe.image.url} alt="" class="rb-list-item-thumb" />
+                      : <div class="rb-list-item-thumb rb-list-thumb-placeholder" />
+                    }
+                    <span class="rb-list-item-name">{recipe.title}</span>
+                  </a>
                   <button
                     class="rb-list-remove"
                     onClick={() => toggleMyList(recipe.id)}

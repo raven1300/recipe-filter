@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://paleogrubs.com/wp-content/uploads/2019/05/6a-cabbage-ground-beef-casserole.jpg"
     alt: "Ground beef and cabbage casserole in a baking dish"
-tags: ["beef", "bake", "low carb"]
+tags: ["beef", "baked", "low carb"]
 shortName: Cabbage Beef Casserole
 ingredients:
   - 2 tablespoons olive oil (plus extra for greasing)

@@ -33,6 +33,8 @@ export const tagEmojis = {
   'slow cooker': '⏱️',
   'one pot':     '🍳',
   stovetop:      '🍳',
+  'air fryer':   '💨',
+  wraps:         '🌯',
 
   // Cuisines
   Indian:        '🇮🇳',
@@ -53,6 +55,7 @@ export const tagEmojis = {
   healthy:       '✅',
 
   // Meal type
+  'dinner party': '🥂',
   breakfast:     '☀️',
   sidedish:      '🥣',
   snack:         '🍿',
