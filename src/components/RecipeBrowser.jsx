@@ -210,7 +210,7 @@ export default function RecipeBrowser({ recipes }) {
         </div>
         <div class="rb-drawer-body">
           {myListRecipes.length === 0
-            ? <p class="rb-drawer-empty">No recipes added yet.<br />Browse and click + Add to save recipes here.</p>
+            ? <p class="rb-drawer-empty">No recipes added yet.<br />Click + Add to save a recipe to your list.</p>
             : myListRecipes.map(recipe => (
                 <div key={recipe.id} class="rb-list-item">
                   <a href={`/recipes/${recipe.id}/`} class="rb-list-item-link">

@@ -28,7 +28,7 @@ export const tagEmojis = {
   casserole:     '🫕',
 
   // Cook method
-  baked:         '🔥',
+  baked:         '♨️',
   'stir fry':    '🥢',
   'slow cooker': '⏱️',
   'one pot':     '🍲',

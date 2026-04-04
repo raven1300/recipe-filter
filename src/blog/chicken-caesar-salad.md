@@ -26,8 +26,10 @@ ingredients:
   - 10 cups cos/romaine lettuce
   - Freshly grated parmesan for garnish
   - 500g chicken breast fillets (optional)
-source: ""
+source: "https://www.recipetineats.com/chicken-caesar-salad/"
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bpVfDpSpqMk" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

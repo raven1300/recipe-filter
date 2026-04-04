@@ -16,8 +16,10 @@ ingredients:
   - 1 cup water
   - Salt and pepper
   - ½–¾ cup cream, half and half, or milk
-source: ""
+source: "https://www.recipetineats.com/classic-pumpkin-soup/"
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-qG9Wj266lA" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

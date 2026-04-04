@@ -14,13 +14,15 @@ ingredients:
   - 1½ tbsp oyster sauce (or hoisin)
   - 1½ tbsp Chinese cooking wine, mirin, or dry sherry
   - 2 tbsp water
-  - 1 tsp coarsely crushed black pepper
+  - 1 tsp black pepper
   - 2 tbsp peanut, vegetable, or canola oil
   - 1 garlic clove, minced
   - ½ onion, sliced
-  - 500g/1 lb thinly sliced beef (tenderloin, flank, sirloin, or similar)
-source: ""
+  - 500g thinly sliced beef (tenderloin, flank, sirloin, or similar)
+source: "https://www.recipetineats.com/chinese-beef-with-honey-and-black-pepper-sauce/"
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LVQ5B1x2XaA" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

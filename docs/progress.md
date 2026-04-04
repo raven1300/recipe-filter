@@ -2,6 +2,14 @@
 
 ## What's been built
 
+### Duplicate cleanup, video embeds & minor polish (session 12)
+
+- **Duplicate draft files removed** — `_cajun-vegan-red-beans-and-rice.md` and `_cauliflower-ground-beef-casserole.md` deleted (published versions already existed); three more drafts previously published by user (`_chicken-caesar-salad.md`, `_chinese-honey-pepper-beef-stir-fry.md`, `_classic-pumpkin-soup.md`) also removed
+- **Video embeds** — iframes added to Chicken Caesar Salad, Chinese Honey Pepper Beef Stir Fry, and Classic Pumpkin Soup
+- **"Baked" emoji** changed from 🔥 to ♨️ (hot springs)
+- **Cauliflower beef casserole** — corrected method step 1 from "spray oil" to "olive oil"
+- **My List empty state text** updated to "No recipes added yet. Click + Add to save a recipe to your list."
+
 ### Ingredient standardisation, tag sections & UI polish (session 11)
 
 - **Ingredient terminology standardised** — bulk find-and-replace across all recipe ingredient lists: `ground beef` → `beef mince`, `chicken broth/bone broth` → `chicken stock`, `bell pepper` → `capsicum` (with colour), `orzo` → `risoni`, `spray oil` → `olive oil`, garlic descriptors normalised to `minced`
