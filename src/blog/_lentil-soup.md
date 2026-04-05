@@ -25,6 +25,7 @@ ingredients:
   - ¼ tsp salt and pepper
   - Chopped fresh parsley, to garnish
 source: ""
+video: ""
 ---
 
 ## Method

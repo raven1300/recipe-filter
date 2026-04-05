@@ -12,7 +12,7 @@ ingredients:
   - 900g (32oz) chicken breast
   - 120g (½ cup) red enchilada sauce
   - 80g (3 Tbsp) green chiles
-  - 400g (14oz) can of fire-roasted tomatoes
+  - 400g tin of tomatoes
   - 2 Tbsp garlic purée
   - 2 tsp onion powder
   - 1 Tbsp salt
@@ -29,6 +29,8 @@ ingredients:
   - 2 red capsicums
   - 1 onion
   - Chopped cilantro, to garnish
+source: "https://www.youtube.com/watch?v=2Ih1bDnSjQo"
+video: "2Ih1bDnSjQo"
 ---
 
 ## Method

@@ -26,9 +26,9 @@ ingredients:
   - ½ tsp cayenne pepper
   - 1 tsp cooking/kosher salt
 source: "https://www.recipetineats.com/cheesy-mexican-beef-bean-bake/"
+video: "ERoiA2wsAXs"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ERoiA2wsAXs" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

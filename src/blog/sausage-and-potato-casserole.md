@@ -24,6 +24,8 @@ ingredients:
   - 1 tablespoon garlic powder
   - 1 teaspoon salt
   - ½ teaspoon pepper
+source: ""
+video: ""
 ---
 
 ## Method

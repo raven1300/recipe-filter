@@ -26,6 +26,7 @@ ingredients:
   - 1 tbsp rice or white vinegar
   - 1 tbsp arrowroot or cornstarch
 source: ""
+video: ""
 ---
 
 ## Method

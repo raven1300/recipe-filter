@@ -22,6 +22,7 @@ ingredients:
   - ½ teaspoon salt
   - ¼ teaspoon black pepper
 source: ""
+video: ""
 ---
 
 ## Method

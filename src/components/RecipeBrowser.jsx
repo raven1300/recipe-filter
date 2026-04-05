@@ -97,9 +97,10 @@ export default function RecipeBrowser({ recipes }) {
           const sections = [
             { label: 'Protein',  tags: ['chicken', 'beef', 'pork', 'sausage', 'turkey', 'eggs'] },
             { label: 'Method',   tags: ['baked', 'slow cooker', 'one pot', 'stir fry', 'stovetop', 'air fryer'] },
-            { label: 'Cuisine',  tags: ['Asian', 'Indian', 'Italian', 'Mediterranean', 'Mexican', 'Thai'] },
-            { label: 'Dish',     tags: ['pasta', 'rice', 'salad', 'soup', 'curry', 'chili', 'casserole', 'wraps', 'breakfast', 'sidedish', 'dinner party'] },
+            { label: 'Cuisine',  tags: ['Asian', 'Indian', 'Italian', 'Japanese', 'Mediterranean', 'Mexican', 'Thai'] },
+            { label: 'Dish',     tags: ['pasta', 'rice', 'salad', 'soup', 'curry', 'chili', 'casserole', 'wraps', 'breakfast', 'sidedish', 'dinner party', 'comfort'] },
             { label: 'Diet',     tags: ['vegetarian', 'low carb', 'add more veg'] },
+            { label: 'Source',   tags: ['Instagram', 'Youtube'] },
           ];
           const knownTags = new Set(sections.flatMap(s => s.tags));
           const otherTags = allTags.filter(t => !knownTags.has(t));

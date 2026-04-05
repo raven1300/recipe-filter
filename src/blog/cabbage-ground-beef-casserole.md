@@ -19,6 +19,8 @@ ingredients:
   - 1 can diced tomatoes (400g)
   - ⅓ cup paleo-friendly mayonnaise
   - 1 head cabbage (approximately 680g), coarsely chopped
+source: ""
+video: ""
 ---
 
 ## Method

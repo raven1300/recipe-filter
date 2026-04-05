@@ -25,6 +25,7 @@ ingredients:
   - 4 eggs
   - optional toppings: Mexican crema, queso fresco, pickled jalapeños, avocado, cilantro
 source: ""
+video: ""
 ---
 
 ## Method

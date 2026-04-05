@@ -27,6 +27,7 @@ ingredients:
   - 1 container Greek yogurt (150g / 5.3 oz)
   - 110g cream cheese
 source: ""
+video: ""
 ---
 
 ## Method

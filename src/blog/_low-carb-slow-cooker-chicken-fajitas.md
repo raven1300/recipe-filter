@@ -17,6 +17,7 @@ ingredients:
   - 1 tablespoon minced garlic
   - 14.5 ounces diced tomatoes
 source: ""
+video: ""
 ---
 
 ## Method

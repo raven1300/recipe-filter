@@ -48,5 +48,9 @@ const formatteddate = `${ordinal(d.getDate())} of ${d.toLocaleString("en", {mont
     <p class="recipe-source">Original recipe: <a href={frontmatter.source} target="_blank" rel="noopener noreferrer">{frontmatter.source}</a></p>
   )}
 
+  {frontmatter.video && (
+    <iframe width="560" height="315" src={`https://www.youtube.com/embed/${frontmatter.video}`} allowfullscreen></iframe>
+  )}
+
   <slot />
 </BaseLayout>

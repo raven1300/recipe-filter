@@ -18,6 +18,7 @@ ingredients:
   - salt and pepper to taste
   - 1 tablespoon finely sliced chives
 source: ""
+video: ""
 ---
 
 ## Method

@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "/images/cauli-cottage.png"
     alt: "Cauliflower cottage pie in a baking dish"
-tags: ["beef", "baked", "low carb", "casserole"]
+tags: ["beef", "baked", "low carb", "casserole", "Youtube"]
 shortName: Cauli Pie
 ingredients:
   - 2 lb cauliflower (900g – 1kg)
@@ -25,9 +25,10 @@ ingredients:
   - ½ cup Parmesan, grated (60g), plus extra for topping
   - 3 egg yolks
   - 1 tsp xanthan gum
+source: ""
+video: "Hwp7lSklRNI"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hwp7lSklRNI" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

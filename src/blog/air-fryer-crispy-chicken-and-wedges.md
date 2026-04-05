@@ -20,9 +20,10 @@ ingredients:
   - 1 egg
   - cornstarch 
   - 50g breadcrumbs 
+source: ""
+video: "NF8bDCckleo"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NF8bDCckleo" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

@@ -22,9 +22,10 @@ ingredients:
   - 480g (2½ cups) short grain rice (dry weight)
   - Green onions, to garnish
   - Sesame seeds, to garnish
+source: ""
+video: "i8YjY43xN0Q"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i8YjY43xN0Q" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

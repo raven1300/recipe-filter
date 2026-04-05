@@ -13,9 +13,10 @@ export const categories = {
       "onion", "tomato", "carrot", "celery", "spinach", "courgette",
       "corn", "broccoli", "capsicum", "zucchini", "cauliflower", "cabbage",
       "lettuce", "potato", "squash", "kale", "scallion", "shallot", "green bean",
-      "jalapeño", "jalapeno", "green chile", "pineapple", "leaves",
+      "jalapeño", "jalapeno", "green chile", "pineapple", "leaves", "cucumber",
     ],
-    exclude: ["tomato paste", "tomato puree", "tinned tomatoes", "mixed vegetables", "frozen", "canned crushed tomatoes", "cornstarch"],
+    exclude: ["tomato paste", "tomato puree", "tinned tomatoes", "mixed vegetables", 
+      "frozen", "canned crushed tomatoes", "cornstarch", "tin of tomatoes",],
   },
   "meats": {
     keywords: [
@@ -41,7 +42,7 @@ export const categories = {
   },
   "tins": {
     keywords: [
-      "tinned tomatoes", "chickpeas", "lentils", "coconut milk", "curry paste",
+      "tinned tomatoes", "chickpeas", "lentils", "coconut milk", "curry paste", "tin",
       "kidney bean", "black bean", "refried bean", "white bean", "crushed tomatoes",
     ],
     exclude: [],
@@ -69,7 +70,7 @@ export const categories = {
     exclude: [],
   },
   "frozen": {
-    keywords: ["berries", "mixed vegetables", "peas", "frozen"],
+    keywords: ["berries", "mixed vegetables", "peas", "frozen", "edamame"],
     exclude: [],
   },
   "sweeteners": {
@@ -83,7 +84,7 @@ export const categories = {
 };
 
 function categorise(ingredient) {
-  const lower = ingredient.toLowerCase();
+  const lower = ingredient.toLowerCase().replace(/,\s*for\s+\w+.*$/, '');
   for (const [category, { keywords, exclude }] of Object.entries(categories)) {
     if (exclude.some(ex => lower.includes(ex))) continue;
     if (keywords.some(kw => lower.includes(kw))) return category;
@@ -108,6 +109,6 @@ export function buildShoppingList(selectedRecipes) {
   const order = ["vegetables", "meats", "dairy", "pasta & grains", "tins", "herbs & spices", "sauces & oils", "frozen", "sweeteners", "other"];
   return order
     .filter(cat => grouped[cat]?.length)
-    .map(cat => `${cat.toUpperCase()}\n${grouped[cat].join('\n')}`)
+    .map(cat => `${cat.toUpperCase()}\n${grouped[cat].sort().join('\n')}`)
     .join('\n\n');
 }

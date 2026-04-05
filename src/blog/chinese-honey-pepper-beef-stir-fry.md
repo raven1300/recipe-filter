@@ -20,9 +20,9 @@ ingredients:
   - ½ onion, sliced
   - 500g thinly sliced beef (tenderloin, flank, sirloin, or similar)
 source: "https://www.recipetineats.com/chinese-beef-with-honey-and-black-pepper-sauce/"
+video: "LVQ5B1x2XaA"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LVQ5B1x2XaA" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

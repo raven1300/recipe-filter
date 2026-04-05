@@ -26,6 +26,7 @@ ingredients:
   - Cajun seasoning, sea salt, and pepper to taste
   - Green onions for garnish
 source: ""
+video: ""
 ---
 
 ## Method

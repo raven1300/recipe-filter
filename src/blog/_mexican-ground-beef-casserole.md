@@ -27,6 +27,7 @@ ingredients:
   - 1 scallion, sliced (optional)
   - salt and black pepper to taste
 source: ""
+video: ""
 ---
 
 ## Method

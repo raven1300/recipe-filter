@@ -26,6 +26,7 @@ ingredients:
   - 1 clove garlic, minced
   - 2 green onions, sliced
 source: ""
+video: ""
 ---
 
 ## Method

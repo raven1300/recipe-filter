@@ -26,6 +26,8 @@ ingredients:
   - 1% milk (until desired consistency)
   - 2 stalks green onions, chopped
   - 500g (2½ cups) short grain or sushi rice
+source: ""
+video: ""
 ---
 
 ## Method

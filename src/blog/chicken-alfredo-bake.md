@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "/images/alfredo-bake.png"
     alt: "Chicken Alfredo bake in a baking dish"
-tags: ["chicken", "baked", "Italian", "low carb"]
+tags: ["chicken", "baked", "Italian", "low carb", "Youtube"]
 shortName: Alfredo Bake
 ingredients:
   - 1½ lb chicken breast (700g)
@@ -17,9 +17,10 @@ ingredients:
   - 1 cup heavy cream (250ml)
   - salt, pepper, and nutmeg
   - 1 cup mozzarella, grated (100g)
+source: "https://www.youtube.com/watch?v=Hwp7lSklRNI&t=423s"
+video: "Hwp7lSklRNI?start=420"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hwp7lSklRNI?start=420" frameborder="0" allowfullscreen></iframe>
 
 ## Method
 

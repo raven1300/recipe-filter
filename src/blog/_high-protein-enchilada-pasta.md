@@ -19,6 +19,7 @@ ingredients:
   - 900g cooked chicken breast (or alternative protein)
   - 1 cup reduced-fat cheddar cheese
 source: ""
+video: ""
 ---
 
 ## Method

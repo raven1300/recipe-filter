@@ -51,8 +51,9 @@ export const tagEmojis = {
   // Dietary
   'low carb':       '💪',
   vegetarian:    '🥦',
-  'add more veg': '🥦',
+  'add more veg': '🥕',
   healthy:       '✅',
+  comfort:       '🤗',
 
   // Meal type
   'dinner party': '🥂',
@@ -60,4 +61,8 @@ export const tagEmojis = {
   sidedish:      '🥣',
   snack:         '🍿',
   dessert:       '🍰',
+
+  // Source
+  Instagram:     '🟣',
+  Youtube:       '▶️',
 };

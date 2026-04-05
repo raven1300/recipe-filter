@@ -30,6 +30,7 @@ ingredients:
   - ⅓ cup sun-dried tomatoes, chopped
   - 2 tbsp basil, chopped
 source: ""
+video: ""
 ---
 
 ## Method

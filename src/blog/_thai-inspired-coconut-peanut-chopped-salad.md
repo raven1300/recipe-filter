@@ -25,6 +25,7 @@ ingredients:
   - Water to thin dressing as needed
   - Chopped peanuts for garnish
 source: ""
+video: ""
 ---
 
 ## Method

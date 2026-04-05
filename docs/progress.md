@@ -2,6 +2,17 @@
 
 ## What's been built
 
+### New recipes, tags, video frontmatter & shopping list fixes (session 13)
+
+- **Video field in frontmatter** — `video:` field added to schema and layout; renders a YouTube embed conditionally (only when populated); supports timestamps via `video: "ID?start=420"`; all 8 existing body iframes migrated to this system
+- **New published recipes** — Japanese Curry Crispy Rice Salad, Crispy Beef Baked Tacos, Cheesy Chipotle Sliders, Creamy Chicken Fajita Pasta, Breakfast Burritos
+- **New tags** — `Instagram` (🟣), `Youtube` (▶️), `comfort` (🤗) added to tagConfig and sidebar sections; `Japanese` added to Cuisine section; `comfort` placed in Dish section
+- **"add more veg" emoji** changed from 🥦 to 🥕 (to differentiate from `vegetarian`)
+- **`video: ""`** placeholder added to all recipe files
+- **`source: ""`** placeholder added to all published recipe files that were missing it
+- **Shopping list — alphabetical sort** — items within each category now sorted alphabetically so duplicate ingredients from multiple recipes appear adjacent
+- **Shopping list — `, for X` suffix stripping** — labels like `, for chicken` no longer cause miscategorisation; stripped before keyword matching
+
 ### Duplicate cleanup, video embeds & minor polish (session 12)
 
 - **Duplicate draft files removed** — `_cajun-vegan-red-beans-and-rice.md` and `_cauliflower-ground-beef-casserole.md` deleted (published versions already existed); three more drafts previously published by user (`_chicken-caesar-salad.md`, `_chinese-honey-pepper-beef-stir-fry.md`, `_classic-pumpkin-soup.md`) also removed

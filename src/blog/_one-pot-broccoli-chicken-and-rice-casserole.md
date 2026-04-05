@@ -24,6 +24,7 @@ ingredients:
   - 2 cups (200g) shredded mozzarella or cheddar
   - Finely chopped parsley, optional
 source: ""
+video: ""
 ---
 
 ## Method

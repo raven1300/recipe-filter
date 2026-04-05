@@ -27,6 +27,7 @@ ingredients:
   - 1½ cups dry brown rice
   - ½ teaspoon liquid smoke (optional)
 source: "https://www.emilieeats.com/cajun-style-vegan-red-beans-rice/"
+video: ""
 ---
 
 ## Method

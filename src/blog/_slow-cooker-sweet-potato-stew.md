@@ -26,6 +26,7 @@ ingredients:
   - ½ white onion, chopped
   - 950ml chicken stock
 source: ""
+video: ""
 ---
 
 ## Method

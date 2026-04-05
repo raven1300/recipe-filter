@@ -25,6 +25,7 @@ ingredients:
   - Green onion, sliced, to serve
   - Sesame seeds, to serve
 source: ""
+video: ""
 ---
 
 ## Method

@@ -21,6 +21,7 @@ ingredients:
   - 1½ tsp chilli garlic sauce
   - Rice and sliced red chilli, to serve
 source: ""
+video: ""
 ---
 
 ## Method
