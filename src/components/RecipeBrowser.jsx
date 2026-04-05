@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'preact/hooks';
+import { useState, useEffect, useRef } from 'preact/hooks';
 import { buildShoppingList } from '../data/categories.js';
 import { tagEmojis } from '../data/tagConfig.js';
 
@@ -49,6 +49,7 @@ export default function RecipeBrowser({ recipes }) {
   const [hydrated, setHydrated] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const searchInputRef = useRef(null);
 
   useEffect(() => {
     setSelectedTags(readSet(TAGS_KEY));
@@ -92,6 +93,8 @@ export default function RecipeBrowser({ recipes }) {
   const searchResults = searchQuery.trim().length === 0
     ? []
     : recipes.filter(r => r.title.toLowerCase().includes(searchQuery.toLowerCase()));
+
+  useEffect(() => { if (searchOpen) searchInputRef.current?.focus(); }, [searchOpen]);
 
   const openSearch = () => { setSearchOpen(true); setSearchQuery(''); };
   const closeSearch = () => { setSearchOpen(false); setSearchQuery(''); };
@@ -326,12 +329,12 @@ export default function RecipeBrowser({ recipes }) {
         <div class="rb-search-backdrop" onClick={closeSearch}>
           <div class="rb-search-modal" onClick={e => e.stopPropagation()}>
             <input
+              ref={searchInputRef}
               class="rb-search-input"
               type="text"
               placeholder="Search recipes…"
               value={searchQuery}
               onInput={e => setSearchQuery(e.target.value)}
-              autoFocus
               onKeyDown={e => e.key === 'Escape' && closeSearch()}
             />
             <div class="rb-search-results">

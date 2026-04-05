@@ -1172,7 +1172,7 @@ body.recipe-page header {
 
 .rb-search-btn {
   background: none;
-  border: none;
+  border: 2px solid var(--primary);
   cursor: pointer;
   font-size: 18px;
   padding: 4px 8px;
@@ -1189,7 +1189,7 @@ body.recipe-page header {
 .rb-search-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 500;
   display: flex;
   align-items: flex-start;
@@ -1202,7 +1202,8 @@ body.recipe-page header {
   border-radius: 12px;
   width: 100%;
   max-width: 560px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--primary);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   display: flex;
   flex-direction: column;
