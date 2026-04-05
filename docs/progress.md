@@ -2,6 +2,14 @@
 
 ## What's been built
 
+### Search, shopping list fixes & tag additions (session 14)
+
+- **Recipe search modal** — 🔍 button in the results bar opens a lightbox overlay; typing filters all recipes by title in real time; click a result to navigate to the recipe page; click outside or press Escape to close
+- **Shopping list — alphabetical sort** — items within each category now sorted alphabetically so duplicate ingredients from multiple recipes appear adjacent
+- **Shopping list — `, for X` suffix stripping** — labels like `, for chicken` no longer cause miscategorisation; stripped before keyword matching
+- **New tags** — `comfort` (🤗) added to Dish section; `Youtube` (▶️) and `Instagram` (🟣) added to Source section; `Japanese` added to Cuisine section
+- **"add more veg" emoji** changed from 🥦 to 🥕
+
 ### New recipes, tags, video frontmatter & shopping list fixes (session 13)
 
 - **Video field in frontmatter** — `video:` field added to schema and layout; renders a YouTube embed conditionally (only when populated); supports timestamps via `video: "ID?start=420"`; all 8 existing body iframes migrated to this system

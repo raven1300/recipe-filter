@@ -47,6 +47,8 @@ export default function RecipeBrowser({ recipes }) {
   const [myList, setMyList] = useState(new Set());
   const [view, setView] = useState('browse'); // 'browse' | 'list' | 'shopping'
   const [hydrated, setHydrated] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     setSelectedTags(readSet(TAGS_KEY));
@@ -86,6 +88,13 @@ export default function RecipeBrowser({ recipes }) {
   const visibleRecipes = selectedTags.size === 0
     ? recipes
     : recipes.filter(r => [...selectedTags].every(t => r.tags.includes(t)));
+
+  const searchResults = searchQuery.trim().length === 0
+    ? []
+    : recipes.filter(r => r.title.toLowerCase().includes(searchQuery.toLowerCase()));
+
+  const openSearch = () => { setSearchOpen(true); setSearchQuery(''); };
+  const closeSearch = () => { setSearchOpen(false); setSearchQuery(''); };
 
   return (
     <div class="rb-layout">
@@ -150,11 +159,16 @@ export default function RecipeBrowser({ recipes }) {
           </div>
         )}
 
-        {/* Results count */}
+        {/* Results count + search button */}
         <div class="rb-results-count">
-          <strong>{visibleRecipes.length}</strong>{' '}
-          {visibleRecipes.length === 1 ? 'recipe' : 'recipes'}
-          {selectedTags.size > 0 ? ' match your filters' : ' available'}
+          <span>
+            <strong>{visibleRecipes.length}</strong>{' '}
+            {visibleRecipes.length === 1 ? 'recipe' : 'recipes'}
+            {selectedTags.size > 0 ? ' match your filters' : ' available'}
+          </span>
+          <button class="rb-search-btn" onClick={openSearch} aria-label="Search recipes">
+            🔍
+          </button>
         </div>
 
         {/* Recipe grid */}
@@ -303,6 +317,39 @@ export default function RecipeBrowser({ recipes }) {
                   </div>
                 ))
             }
+          </div>
+        </div>
+      )}
+
+      {/* Search modal */}
+      {searchOpen && (
+        <div class="rb-search-backdrop" onClick={closeSearch}>
+          <div class="rb-search-modal" onClick={e => e.stopPropagation()}>
+            <input
+              class="rb-search-input"
+              type="text"
+              placeholder="Search recipes…"
+              value={searchQuery}
+              onInput={e => setSearchQuery(e.target.value)}
+              autoFocus
+              onKeyDown={e => e.key === 'Escape' && closeSearch()}
+            />
+            <div class="rb-search-results">
+              {searchQuery.trim().length === 0
+                ? <p class="rb-search-hint">Start typing to search…</p>
+                : searchResults.length === 0
+                  ? <p class="rb-search-hint">No recipes found.</p>
+                  : searchResults.map(r => (
+                      <a key={r.id} href={`/recipes/${r.id}/`} class="rb-search-result-item">
+                        {r.image?.url
+                          ? <img src={r.image.url} alt="" class="rb-search-result-thumb" />
+                          : <div class="rb-search-result-thumb rb-search-thumb-placeholder" />
+                        }
+                        <span>{r.title}</span>
+                      </a>
+                    ))
+              }
+            </div>
           </div>
         </div>
       )}
