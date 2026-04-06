@@ -327,8 +327,8 @@ export default function RecipeBrowser({ recipes }) {
         </div>
       )}
 
-      {/* Mobile bottom bar */}
-      <div class="rb-mobile-bar">
+      {/* Mobile bottom bar — only shown in browse view */}
+      <div class={`rb-mobile-bar${view !== 'browse' ? ' hidden' : ''}`}>
         <button class="rb-mobile-bar-btn" onClick={() => setMobileFilterOpen(true)}>
           🎯 Filters{selectedTags.size > 0 ? ` (${selectedTags.size})` : ''}
         </button>

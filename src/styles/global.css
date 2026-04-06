@@ -1266,6 +1266,10 @@ body.recipe-page header {
   display: none;
 }
 
+.rb-mobile-bar.hidden {
+  display: none !important;
+}
+
 .rb-mobile-backdrop {
   display: none;
 }
