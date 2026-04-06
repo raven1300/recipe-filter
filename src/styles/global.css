@@ -799,7 +799,7 @@ body.recipe-page header {
 /* Recipe card grid */
 .rb-recipe-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
 }
 
@@ -906,6 +906,7 @@ body.recipe-page header {
 .rb-card-tag.emoji-only {
   flex: none;
   font-size: 16px;
+  padding: 2px 6px;
 }
 
 .rb-card-tag.matched {
