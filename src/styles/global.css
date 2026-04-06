@@ -737,24 +737,19 @@ body.recipe-page header {
   padding: 3px 4px 3px 10px;
   border-radius: 12px;
   font-family: 'Lato', sans-serif;
-}
-
-.rb-filter-chip-x {
-  background: none;
-  border: none;
-  color: var(--primary);
   cursor: pointer;
-  font-size: 15px;
-  line-height: 1;
-  padding: 0 4px;
-  border-radius: 50%;
-  font-family: 'Lato', sans-serif;
   transition: background 0.12s, color 0.12s;
 }
 
-.rb-filter-chip-x:hover {
+.rb-filter-chip:hover {
   background: var(--primary);
   color: var(--primary-text);
+}
+
+.rb-filter-chip-x {
+  font-size: 15px;
+  line-height: 1;
+  padding: 0 4px;
 }
 
 /* Clear button (in drawer header) */
@@ -1264,4 +1259,102 @@ body.recipe-page header {
 .rb-search-thumb-placeholder {
   background: var(--border);
   border-radius: 4px;
+}
+
+/* ===== Mobile bottom bar (hidden on desktop) ===== */
+.rb-mobile-bar {
+  display: none;
+}
+
+.rb-mobile-backdrop {
+  display: none;
+}
+
+/* ===== Mobile responsive layout ===== */
+@media (max-width: 768px) {
+
+  /* Sidebar slides in from left as overlay */
+  .rb-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 400;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    width: 280px;
+  }
+
+  .rb-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  /* Drawer slides in from right as overlay */
+  .rb-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 400;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+  }
+
+  .rb-drawer.mobile-open {
+    transform: translateX(0);
+  }
+
+  /* Backdrop behind open panels */
+  .rb-mobile-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 399;
+  }
+
+  /* Main takes full width, add padding for bottom bar */
+  .rb-main {
+    padding-bottom: 80px;
+  }
+
+  /* Bottom bar */
+  .rb-mobile-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    background: var(--bg-surface);
+    border-top: 2px solid var(--border);
+    padding: 10px 16px;
+    gap: 12px;
+  }
+
+  .rb-mobile-bar-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* Full recipe list — stack columns vertically */
+  .recipe-full-columns,
+  .recipe-full-columns.three-col {
+    grid-template-columns: 1fr;
+  }
+
+  /* Responsive iframe */
+  iframe {
+    width: 100% !important;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
 }

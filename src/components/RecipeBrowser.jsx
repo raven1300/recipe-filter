@@ -49,6 +49,8 @@ export default function RecipeBrowser({ recipes }) {
   const [hydrated, setHydrated] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
   const searchInputRef = useRef(null);
 
   useEffect(() => {
@@ -102,8 +104,13 @@ export default function RecipeBrowser({ recipes }) {
   return (
     <div class="rb-layout">
 
+      {/* Mobile backdrop */}
+      {(mobileFilterOpen || mobileDrawerOpen) && (
+        <div class="rb-mobile-backdrop" onClick={() => { setMobileFilterOpen(false); setMobileDrawerOpen(false); }} />
+      )}
+
       {/* Left sidebar — tag filters */}
-      <aside class="rb-sidebar">
+      <aside class={`rb-sidebar${mobileFilterOpen ? ' mobile-open' : ''}`}>
         <div class="rb-sidebar-title">Filters</div>
         {(() => {
           const sections = [
@@ -150,14 +157,10 @@ export default function RecipeBrowser({ recipes }) {
           <div class="rb-topbar">
             <span class="rb-filters-label">Filtering by:</span>
             {[...selectedTags].map(tag => (
-              <span key={tag} class="rb-filter-chip">
+              <button key={tag} class="rb-filter-chip" onClick={() => toggleTag(tag)} aria-label={`Remove ${tag} filter`}>
                 {tagLabel(tag)}
-                <button
-                  class="rb-filter-chip-x"
-                  onClick={() => toggleTag(tag)}
-                  aria-label={`Remove ${tag} filter`}
-                >×</button>
-              </span>
+                <span class="rb-filter-chip-x">×</span>
+              </button>
             ))}
           </div>
         )}
@@ -219,7 +222,7 @@ export default function RecipeBrowser({ recipes }) {
       </main>
 
       {/* Right panel — always visible */}
-      <div class="rb-drawer">
+      <div class={`rb-drawer${mobileDrawerOpen ? ' mobile-open' : ''}`}>
         <div class="rb-drawer-header">
           <h2>My List</h2>
           {(myList.size > 0 || selectedTags.size > 0) && (
@@ -251,13 +254,13 @@ export default function RecipeBrowser({ recipes }) {
           <div class="rb-drawer-actions">
             <button
               class="rb-drawer-action-btn"
-              onClick={() => { setView('list'); setDrawerOpen(false); }}
+              onClick={() => { setView('list'); setMobileDrawerOpen(false); }}
             >
               View full recipes
             </button>
             <button
               class="rb-drawer-action-btn"
-              onClick={() => { setView('shopping'); setDrawerOpen(false); }}
+              onClick={() => { setView('shopping'); setMobileDrawerOpen(false); }}
             >
               Shopping list
             </button>
@@ -323,6 +326,16 @@ export default function RecipeBrowser({ recipes }) {
           </div>
         </div>
       )}
+
+      {/* Mobile bottom bar */}
+      <div class="rb-mobile-bar">
+        <button class="rb-mobile-bar-btn" onClick={() => setMobileFilterOpen(true)}>
+          🎯 Filters{selectedTags.size > 0 ? ` (${selectedTags.size})` : ''}
+        </button>
+        <button class="rb-mobile-bar-btn" onClick={() => setMobileDrawerOpen(true)}>
+          📋 My List ({myList.size}/{LIST_MAX})
+        </button>
+      </div>
 
       {/* Search modal */}
       {searchOpen && (
