@@ -1315,7 +1315,12 @@ body.recipe-page header {
 
   /* Main takes full width, add padding for bottom bar */
   .rb-main {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
+  }
+
+  /* Also pad the page body in case page-level scrolling is active */
+  body {
+    padding-bottom: 120px;
   }
 
   /* Bottom bar */
