@@ -24,7 +24,7 @@ ingredients:
   - 1 lemon (zest and juice)
   - ¼ tsp salt and pepper
   - Chopped fresh parsley, to garnish
-source: ""
+source: "https://www.recipetineats.com/lentil-soup/"
 video: ""
 ---
 

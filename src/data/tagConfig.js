@@ -58,7 +58,7 @@ export const tagEmojis = {
   // Meal type
   'dinner party': '🥂',
   breakfast:     '☀️',
-  sidedish:      '🥣',
+  'side dish':   '🥣',
   snack:         '🍿',
   dessert:       '🍰',
 

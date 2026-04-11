@@ -32,7 +32,7 @@ ingredients:
   - red pepper flakes
   - fresh cilantro, chopped
   - lime wedges for serving
-source: ""
+source: "https://www.supergoldenbakes.com/one-pan-coconut-lime-chicken/"
 video: ""
 ---
 

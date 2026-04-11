@@ -19,7 +19,7 @@ ingredients:
   - ½ cup chicken stock
   - 2 jars basil pesto (185g each)
   - ¼ cup shredded parmesan
-source: ""
+source: "https://www.chef-michael.com/recipes/keto-pesto-chicken"
 video: ""
 ---
 

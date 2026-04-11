@@ -25,7 +25,7 @@ ingredients:
   - 2 bay leaves
   - Cajun seasoning, sea salt, and pepper to taste
   - Green onions for garnish
-source: ""
+source: "https://fitmencook.com/recipes/low-carb-cajun-jambalaya-one-skillet-recipe/"
 video: ""
 ---
 

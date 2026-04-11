@@ -25,7 +25,7 @@ ingredients:
   - 2 tablespoons BBQ sauce
   - ½ white onion, chopped
   - 950ml chicken stock
-source: ""
+source: "https://theproteinchef.co/delicious-slow-cooker-sweet-potato-stew-recipe/"
 video: ""
 ---
 

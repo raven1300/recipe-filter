@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://media.theproteinchef.co/wp-content/uploads/2023/11/Healthy-Sesame-Chicken-Recipe.jpg"
     alt: "Sesame chicken in a pan with sesame seeds and sauce"
-tags: ["chicken", "Asian", "stir fry"]
+tags: ["chicken", "Asian", "stir fry", "add more veg"]
 shortName: Sesame Chicken
 ingredients:
   - 900g chicken thighs (or chicken breast)
@@ -22,8 +22,8 @@ ingredients:
   - 1 tablespoon sesame seeds
   - 1 tablespoon corn starch (for sauce)
   - 2 tablespoons cold water
-source: ""
-video: ""
+source: "https://theproteinchef.co/healthy-sesame-chicken-recipe/"
+video: "wqUjE_Ro3do"
 ---
 
 ## Method

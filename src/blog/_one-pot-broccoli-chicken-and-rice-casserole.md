@@ -23,7 +23,7 @@ ingredients:
   - 1 large head broccoli, cut into small florets (~400-500g)
   - 2 cups (200g) shredded mozzarella or cheddar
   - Finely chopped parsley, optional
-source: ""
+source: "https://www.recipetineats.com/one-pot-chicken-broccoli-rice-casserole/"
 video: ""
 ---
 

@@ -17,7 +17,7 @@ ingredients:
   - 2½ servings stuffing mix
   - 4 ounces hot water
   - 1-2 tablespoons bacon bits (optional)
-source: ""
+source: "https://theproteinchef.co/leftover-turkey-or-chicken-casserole-recipe/"
 video: ""
 ---
 

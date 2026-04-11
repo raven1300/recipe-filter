@@ -25,8 +25,8 @@ ingredients:
   - 1 cup fat-free or reduced-fat mozzarella cheese
   - ⅓ cup whole wheat bread crumbs
   - ½ cup grated parmesan and romano cheese
-source: ""
-video: ""
+source: "https://theproteinchef.co/healthy-quinoa-chicken-parmesan-recipe/"
+video: "LZE_anT8tUw"
 ---
 
 ## Method

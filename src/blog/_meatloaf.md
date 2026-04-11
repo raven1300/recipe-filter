@@ -23,7 +23,7 @@ ingredients:
   - ½ cup tomato ketchup (for glaze)
   - 2 tbsp cider vinegar (for glaze)
   - 1 tbsp brown sugar (for glaze)
-source: ""
+source: "https://www.recipetineats.com/meatloaf-recipe/"
 video: ""
 ---
 

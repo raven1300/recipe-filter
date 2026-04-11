@@ -20,7 +20,7 @@ ingredients:
   - 1 tablespoon lime juice
   - ¼ cup fresh cilantro, chopped
   - pinch of cayenne pepper
-source: ""
+source: "https://www.everylastbite.com/2018/01/29/mexican-cauliflower-rice/"
 video: ""
 ---
 

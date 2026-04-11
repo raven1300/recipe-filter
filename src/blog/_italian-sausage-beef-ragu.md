@@ -29,7 +29,7 @@ ingredients:
   - 500g pappardelle pasta
   - Parmesan or parmigiano reggiano, grated
   - Parsley, chopped (optional garnish)
-source: ""
+source: "https://www.recipetineats.com/italian-sausage-beef-ragu/"
 video: ""
 ---
 

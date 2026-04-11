@@ -31,7 +31,7 @@ ingredients:
   - ½ tsp cayenne powder
   - ½ tsp black pepper
   - ½ tsp salt
-source: ""
+source: "https://www.recipetineats.com/jambalaya-recipe/"
 video: ""
 ---
 

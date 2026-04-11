@@ -24,7 +24,7 @@ ingredients:
   - 110g can diced green chiles, drained
   - 4 eggs
   - optional toppings: Mexican crema, queso fresco, pickled jalapeños, avocado, cilantro
-source: ""
+source: "https://www.chef-michael.com/recipes/texas-eggs"
 video: ""
 ---
 

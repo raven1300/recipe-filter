@@ -32,7 +32,7 @@ ingredients:
   - 2 tbsp lime juice
   - 3 makrut lime leaves
   - 1 lemongrass stalk
-source: ""
+source: "https://www.recipetineats.com/chicken-satay-curry/"
 video: ""
 ---
 

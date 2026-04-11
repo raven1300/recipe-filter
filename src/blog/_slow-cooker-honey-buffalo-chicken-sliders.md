@@ -24,7 +24,7 @@ ingredients:
   - 1½ tbsp cornstarch
   - 7 slider rolls
   - Lettuce (optional)
-source: ""
+source: "https://www.recipetineats.com/slow-cooker-honey-buffalo-chicken-sliders/"
 video: ""
 ---
 

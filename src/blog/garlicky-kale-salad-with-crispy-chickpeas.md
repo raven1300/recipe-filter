@@ -21,7 +21,7 @@ ingredients:
   - 1-2 tablespoons maple syrup or honey
   - pinch each of salt and pepper
   - hot water for thinning dressing
-source: ""
+source: "https://minimalistbaker.com/garlicky-kale-salad-with-crispy-chickpeas/"
 video: ""
 ---
 

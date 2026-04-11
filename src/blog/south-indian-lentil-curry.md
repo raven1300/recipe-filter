@@ -35,7 +35,7 @@ source: "https://www.thedoctorskitchen.com/recipes/south-indian-style-monkfish-a
 video: "aXrfzqjv1E0"
 ---
 
-## Nick's note
+## Raven's note
 
 The recipe calls for monkfish, and I substituted in chicken for it.  Feel free to change it back, or not include it at all and keep it vegetarian.
 

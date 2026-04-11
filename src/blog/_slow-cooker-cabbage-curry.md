@@ -24,7 +24,7 @@ ingredients:
   - 1 cup tomato sauce
   - 2 teaspoons salt
   - 1 cup frozen peas
-source: ""
+source: "https://cooktopcove.com/2019/08/28/tired-of-boring-vegetarian-food-try-this-flavorful-slow-cooker-curry/"
 video: ""
 ---
 

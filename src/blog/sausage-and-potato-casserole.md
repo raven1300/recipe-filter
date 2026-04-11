@@ -24,7 +24,7 @@ ingredients:
   - 1 tablespoon garlic powder
   - 1 teaspoon salt
   - ½ teaspoon pepper
-source: ""
+source: "https://cooktopcove.com/2017/01/23/how-to-make-sausage-and-potato-casserole-/"
 video: ""
 ---
 

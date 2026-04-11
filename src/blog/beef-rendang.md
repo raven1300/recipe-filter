@@ -29,7 +29,7 @@ ingredients:
   - ⅓ cup desiccated coconut
   - 1 tbsp brown sugar or palm sugar
   - 1½ tsp salt
-source: ""
+source: "https://www.recipetineats.com/beef-rendang/"
 video: ""
 ---
 

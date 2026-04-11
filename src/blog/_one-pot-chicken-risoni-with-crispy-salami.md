@@ -29,7 +29,7 @@ ingredients:
   - 150g baby spinach
   - ⅓ cup sun-dried tomatoes, chopped
   - 2 tbsp basil, chopped
-source: ""
+source: "https://www.recipetineats.com/one-pot-chicken-risoni-with-crispy-salami/"
 video: ""
 ---
 

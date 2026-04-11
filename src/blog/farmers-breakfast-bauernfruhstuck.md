@@ -17,7 +17,7 @@ ingredients:
   - 1 teaspoon fresh chopped oregano
   - salt and pepper to taste
   - 1 tablespoon finely sliced chives
-source: ""
+source: "https://www.sbs.com.au/food/recipe/farmers-breakfast-bauernfruhstuck/ac0gcjxaf"
 video: ""
 ---
 

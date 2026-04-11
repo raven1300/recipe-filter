@@ -23,7 +23,7 @@ ingredients:
   - ¼ tsp salt
   - ¼ tsp black pepper
   - Additional parmesan and parsley for garnish
-source: ""
+source: "https://www.recipetineats.com/one-pot-chicken-vegetable-parmesan-orzo-risoni/"
 video: ""
 ---
 

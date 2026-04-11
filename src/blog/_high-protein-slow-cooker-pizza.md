@@ -18,7 +18,7 @@ ingredients:
   - 2 teaspoons Italian seasoning
   - 2 teaspoons minced garlic
   - 225g reduced-fat or fat-free pizza cheese
-source: ""
+source: "https://theproteinchef.co/high-protein-slow-cooker-pizza-recipe/"
 video: ""
 ---
 

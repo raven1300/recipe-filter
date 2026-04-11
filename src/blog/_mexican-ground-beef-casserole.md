@@ -26,7 +26,7 @@ ingredients:
   - 1 tablespoon nutritional yeast
   - 1 scallion, sliced (optional)
   - salt and black pepper to taste
-source: ""
+source: "https://paleogrubs.com/mexican-ground-beef-casserole"
 video: ""
 ---
 

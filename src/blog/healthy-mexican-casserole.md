@@ -25,8 +25,8 @@ ingredients:
   - 6 mini tortillas (about 25 calories each)
   - ½ can low sodium refried beans (225g)
   - 1 cup Mexican cheese blend
-source: ""
-video: ""
+source: "https://theproteinchef.co/healthy-mexican-casserole-recipe/"
+video: "HCBE10Ww3wg"
 ---
 
 ## Method

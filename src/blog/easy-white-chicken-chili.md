@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://media.theproteinchef.co/wp-content/uploads/2021/01/Easy-White-Chicken-Chili-Recipe.jpg"
     alt: "Bowl of white chicken chili topped with garnishes"
-tags: ["chicken", "slow cooker", "chili", "one pot"]
+tags: ["chicken", "slow cooker", "chili", "one pot", "soup"]
 shortName: White Chicken Chili
 ingredients:
   - 1 yellow onion
@@ -23,11 +23,11 @@ ingredients:
   - ¼ teaspoon cayenne pepper
   - ½ teaspoon salt
   - black pepper to taste
-  - 2 cans white beans (Great Northern, 435g each, drained and rinsed)
-  - 1 container Greek yogurt (150g / 5.3 oz)
+  - 2 cans white beans, 400g
+  - 150g Greek yogurt
   - 110g cream cheese
-source: ""
-video: ""
+source: "https://theproteinchef.co/easy-white-chicken-chili-recipe/"
+video: "P21NuAO2vlc"
 ---
 
 ## Method

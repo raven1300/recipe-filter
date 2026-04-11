@@ -24,8 +24,8 @@ ingredients:
   - 2 cups frozen diced carrots, peas, and corn
   - 3 cups day-old cooked rice
   - ½ cup finely sliced green onions
-source: ""
-video: ""
+source: "https://www.recipetineats.com/beef-fried-rice/"
+video: "Ve7JGsgi9g0"
 ---
 
 ## Method

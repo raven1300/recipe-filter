@@ -27,7 +27,7 @@ ingredients:
   - 1.5 cups cherry tomatoes
   - 0.5 cup crumbled feta cheese
   - Fresh oregano, optional garnish
-source: ""
+source: "https://www.recipetineats.com/one-pot-baked-greek-chicken-orzo-risoni/"
 video: ""
 ---
 

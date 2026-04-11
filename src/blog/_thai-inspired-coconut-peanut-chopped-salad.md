@@ -24,7 +24,7 @@ ingredients:
   - 1 tsp sriracha (optional)
   - Water to thin dressing as needed
   - Chopped peanuts for garnish
-source: ""
+source: "https://fitmencook.com/thai-inspired-chopped-salad/"
 video: ""
 ---
 

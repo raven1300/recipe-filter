@@ -25,7 +25,7 @@ ingredients:
   - 3 tbsp low-sodium tamari
   - 1 tbsp rice or white vinegar
   - 1 tbsp arrowroot or cornstarch
-source: ""
+source: "https://fitmencook.com/recipes/ginger-chicken-stir-fry/"
 video: ""
 ---
 

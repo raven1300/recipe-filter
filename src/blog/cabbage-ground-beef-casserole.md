@@ -19,7 +19,7 @@ ingredients:
   - 1 can diced tomatoes (400g)
   - ⅓ cup paleo-friendly mayonnaise
   - 1 head cabbage (approximately 680g), coarsely chopped
-source: ""
+source: "https://paleogrubs.com/cabbage-ground-beef-casserole"
 video: ""
 ---
 

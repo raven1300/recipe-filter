@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2019/03/Best-easy-Chicken-Curry_5.jpg"
     alt: "Close up of easy Chicken Curry served over rice in a rustic black bowl"
-tags: ["chicken", "Indian", "one pot", "rice"]
+tags: ["chicken", "Indian", "one pot", "rice", "add more veg"]
 shortName: Chicken Curry
 ingredients:
   - 1.5 tbsp vegetable or canola oil
@@ -15,13 +15,13 @@ ingredients:
   - ½ onion, finely chopped
   - 500g/1 lb chicken thighs, sliced
   - 2.5 tbsp curry powder
-  - 270 ml/1.25 cups full-fat coconut milk
+  - 270 ml/1.25 cups coconut milk
   - 1.5 cups (375 ml) low-sodium chicken stock
   - ½ tsp salt
   - ¾ cup frozen peas
   - ¼ cup coriander/cilantro leaves, chopped
-source: ""
-video: ""
+source: "https://www.recipetineats.com/chicken-curry/"
+video: "R1tVXVZ6Rj8"
 ---
 
 ## Method

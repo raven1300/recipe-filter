@@ -9,7 +9,7 @@ image:
 tags: ["sausage", "one pot", "pasta", "Italian"]
 shortName: Sausage Meatball Pasta
 ingredients: []
-source: ""
+source: "https://www.recipetineats.com/one-pot-sausage-meatball-pasta/"
 video: ""
 ---
 

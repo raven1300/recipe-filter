@@ -24,7 +24,7 @@ ingredients:
   - ½ cup ricotta, full fat
   - 4 tbsp milk
   - ¼ cup grated parmesan
-source: ""
+source: "https://www.recipetineats.com/whipped-ricotta-one-pot-chicken-pasta/"
 video: ""
 ---
 

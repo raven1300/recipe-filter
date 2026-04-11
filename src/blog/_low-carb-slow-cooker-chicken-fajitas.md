@@ -16,7 +16,7 @@ ingredients:
   - 1 tablespoon honey
   - 1 tablespoon minced garlic
   - 14.5 ounces diced tomatoes
-source: ""
+source: "https://theproteinchef.co/low-carb-slow-cooker-chicken-fajitas-recipe/"
 video: ""
 ---
 

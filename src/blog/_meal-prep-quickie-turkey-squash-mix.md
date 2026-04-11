@@ -17,7 +17,7 @@ ingredients:
   - 1 tbsp taco or fajita seasoning blend
   - 1/2 cup enchilada sauce
   - olive oil
-source: ""
+source: "https://fitmencook.com/meal-prep-quickie-turkey-squash-mix/"
 video: ""
 ---
 

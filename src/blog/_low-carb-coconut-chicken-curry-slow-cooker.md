@@ -25,7 +25,7 @@ ingredients:
   - 1 tsp oil
   - 1 clove garlic, minced
   - 2 green onions, sliced
-source: ""
+source: "https://fitmencook.com/recipes/coconut-curry-slow-cooker/"
 video: ""
 ---
 

@@ -117,7 +117,7 @@ export default function RecipeBrowser({ recipes }) {
             { label: 'Protein',  tags: ['chicken', 'beef', 'pork', 'sausage', 'turkey', 'eggs'] },
             { label: 'Method',   tags: ['baked', 'slow cooker', 'one pot', 'stir fry', 'stovetop', 'air fryer'] },
             { label: 'Cuisine',  tags: ['Asian', 'Indian', 'Italian', 'Japanese', 'Mediterranean', 'Mexican', 'Thai'] },
-            { label: 'Dish',     tags: ['pasta', 'rice', 'salad', 'soup', 'curry', 'chili', 'casserole', 'wraps', 'breakfast', 'sidedish', 'dinner party', 'comfort'] },
+            { label: 'Dish',     tags: ['pasta', 'rice', 'salad', 'soup', 'curry', 'chili', 'casserole', 'wraps', 'breakfast', 'side dish', 'dinner party', 'comfort'] },
             { label: 'Diet',     tags: ['vegetarian', 'low carb', 'add more veg'] },
             { label: 'Source',   tags: ['Instagram', 'Youtube'] },
           ];
@@ -281,7 +281,12 @@ export default function RecipeBrowser({ recipes }) {
                   <div key={recipe.id} class="recipe-full">
                     <div class="recipe-full-header">
                       <h2>{recipe.title}</h2>
-                      <button onClick={() => toggleMyList(recipe.id)} class="list-toggle">Remove</button>
+                      <div class="recipe-full-header-actions">
+                        {recipe.video && (
+                          <a href={`https://www.youtube.com/watch?v=${recipe.video}`} target="_blank" rel="noopener noreferrer" class="recipe-video-link">▶ Watch video</a>
+                        )}
+                        <button onClick={() => toggleMyList(recipe.id)} class="list-toggle">Remove</button>
+                      </div>
                     </div>
                     {(() => {
                       const ings = recipe.ingredients ?? [];

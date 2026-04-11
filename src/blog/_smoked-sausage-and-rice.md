@@ -22,7 +22,7 @@ ingredients:
   - 2½ cups chicken stock
   - 2 cups frozen peas, thawed
   - 2 tbsp parsley, chopped (optional)
-source: ""
+source: "https://www.recipetineats.com/smoked-sausage-and-rice-quick-one-pot-meal/"
 video: ""
 ---
 

@@ -450,7 +450,6 @@ footer {
 }
 
 .list-toggle {
-  align-self: flex-start;
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
   border: 1.5px solid var(--primary);
@@ -488,6 +487,31 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.recipe-full-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.recipe-video-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  color: var(--primary);
+  text-decoration: none;
+  border: 1.5px solid var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: background 0.12s, color 0.12s;
+  line-height: normal;
+}
+
+.recipe-video-link:hover {
+  background: var(--primary);
+  color: var(--primary-text);
 }
 
 .recipe-full-columns {
