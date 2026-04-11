@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2015/07/Chinese-Honey-Pepper-Beef_5.jpg"
     alt: "Close up of Chinese Honey Pepper Beef in a skillet, fresh off the stove"
-tags: ["beef", "stir fry", "Asian"]
+tags: ["beef", "stir fry", "Asian", "add more veg"]
 shortName: Honey Pepper Beef
 ingredients:
   - 2½ tbsp soy sauce

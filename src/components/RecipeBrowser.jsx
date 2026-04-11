@@ -170,7 +170,7 @@ export default function RecipeBrowser({ recipes }) {
           <span>
             <strong>{visibleRecipes.length}</strong>{' '}
             {visibleRecipes.length === 1 ? 'recipe' : 'recipes'}
-            {selectedTags.size > 0 ? ' match your filters' : ' available'}
+            {selectedTags.size > 0 ? (visibleRecipes.length === 1 ? ' matches your filters' : ' match your filters') : ' available'}
           </span>
           <button class="rb-search-btn" onClick={openSearch} aria-label="Search recipes">
             🔍
@@ -178,9 +178,7 @@ export default function RecipeBrowser({ recipes }) {
         </div>
 
         {/* Recipe grid */}
-        {visibleRecipes.length === 0
-          ? <p class="rb-no-results">No recipes match all of your selected tags.</p>
-          : <div class="rb-recipe-grid">
+        {visibleRecipes.length > 0 && <div class="rb-recipe-grid">
               {visibleRecipes.map(recipe => {
                 const inList = myList.has(recipe.id);
                 const canAdd = inList || myList.size < LIST_MAX;

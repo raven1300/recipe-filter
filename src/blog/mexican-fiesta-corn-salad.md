@@ -6,7 +6,7 @@ image:
     url: "https://www.mingleseasoning.com/cdn/shop/articles/IMG_1089_1800x.jpg"
     alt: "Corn Salad"
 pubDate: 2022-02-28
-tags: ["salad", "chicken", "Mexican"]
+tags: ["salad", "vegetarian", "Mexican"]
 shortName: Corn Salad
 ingredients:
   - 3 corn cobs

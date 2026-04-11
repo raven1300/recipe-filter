@@ -16,7 +16,7 @@ export const categories = {
       "jalapeño", "jalapeno", "green chile", "pineapple", "leaves", "cucumber",
     ],
     exclude: ["tomato paste", "tomato puree", "tinned tomatoes", "mixed vegetables", 
-      "frozen", "canned crushed tomatoes", "cornstarch", "tin of tomatoes",],
+      "frozen", "canned crushed tomatoes", "cornstarch", "tin of tomatoes", "onion powder"],
   },
   "meats": {
     keywords: [
@@ -55,7 +55,7 @@ export const categories = {
       "cardamom", "cinnamon", "star anise", "bay", "ginger", "galangal",
       "lemongrass", "fennel", "sage", "parsley", "cilantro", "chives",
       "tamarind", "sesame seed", "mustard seed", "broth", "garlic", "nutmeg",
-      "mixed herbs", "cornstarch",
+      "mixed herbs", "cornstarch", "recipe base",
     ],
     exclude: [],
   },
