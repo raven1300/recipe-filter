@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://fitmencook.com/wp-content/uploads/2023/03/DSC05199-811.jpg"
     alt: "Slow cooker coconut chicken curry in a bowl with cauliflower rice"
-tags: ["chicken", "slow cooker", "Indian"]
+tags: ["chicken", "slow cooker", "Indian", "curry"]
 shortName: Coconut Chicken Curry
 ingredients:
   - 1 tbsp coconut oil

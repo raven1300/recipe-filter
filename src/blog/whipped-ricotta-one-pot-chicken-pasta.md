@@ -25,7 +25,7 @@ ingredients:
   - 4 tbsp milk
   - ¼ cup grated parmesan
 source: "https://www.recipetineats.com/whipped-ricotta-one-pot-chicken-pasta/"
-video: ""
+video: "f453yZh2oMU"
 ---
 
 ## Method

@@ -19,7 +19,7 @@ ingredients:
   - 900g cooked chicken breast (or alternative protein)
   - 1 cup reduced-fat cheddar cheese
 source: "https://theproteinchef.co/high-protein-enchilada-pasta-recipe/"
-video: ""
+video: "OaCmPgiaEQw"
 ---
 
 ## Method

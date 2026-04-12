@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://media.theproteinchef.co/wp-content/uploads/2020/03/Easy-Slow-Cooker-Pizza-Recipe.jpg"
     alt: "Slow cooker pizza casserole with melted cheese"
-tags: ["beef", "slow cooker", "pasta", "Italian"]
+tags: ["beef", "slow cooker", "pasta", "Italian", "comfort"]
 shortName: Slow Cooker Pizza
 ingredients:
   - 3 cups pasta (224g dry)
@@ -19,7 +19,7 @@ ingredients:
   - 2 teaspoons minced garlic
   - 225g reduced-fat or fat-free pizza cheese
 source: "https://theproteinchef.co/high-protein-slow-cooker-pizza-recipe/"
-video: ""
+video: "GVunVeZagrs"
 ---
 
 ## Method

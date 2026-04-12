@@ -26,7 +26,7 @@ ingredients:
   - ½ white onion, chopped
   - 950ml chicken stock
 source: "https://theproteinchef.co/delicious-slow-cooker-sweet-potato-stew-recipe/"
-video: ""
+video: "C0ORnUOLTXA"
 ---
 
 ## Method

@@ -22,7 +22,7 @@ export const tagEmojis = {
 
   // Dish types
   salad:         '🥗',
-  soup:          '🍲',
+  soup:          '🥘',
   curry:         '🍛',
   chili:         '🌶️',
   casserole:     '🫕',

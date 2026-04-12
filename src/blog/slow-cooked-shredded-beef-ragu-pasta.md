@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2017/07/Beef-Ragu-11a.jpg"
     alt: "Rich, slow cooked Shredded Beef Ragu Sauce with pappardelle pasta"
-tags: ["beef", "pasta", "Italian", "one pot"]
+tags: ["beef", "pasta", "Italian", "one pot", "dinner party"]
 shortName: Shredded Beef Ragu
 ingredients:
   - 1.2kg / 2.5 lb chuck beef, cut into 4 equal pieces
@@ -28,7 +28,7 @@ ingredients:
   - Freshly grated parmesan cheese
   - Fresh parsley, finely chopped (optional)
 source: "https://www.recipetineats.com/slow-cooked-shredded-beef-ragu-pasta/"
-video: ""
+video: "q7xwV8D9uGI"
 ---
 
 ## Method

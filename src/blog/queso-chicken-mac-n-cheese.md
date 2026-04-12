@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "/images/queso-chicken-mac-n-cheese.png"
     alt: "Queso chicken mac n cheese in a slow cooker"
-tags: ["chicken", "pasta", "slow cooker", "Mexican"]
+tags: ["chicken", "pasta", "slow cooker", "Mexican", "comfort"]
 shortName: Queso Chicken Mac
 ingredients:
   - 900g (32oz) chicken breast

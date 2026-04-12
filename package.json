@@ -13,5 +13,8 @@
     "@astrojs/rss": "^4.0.14",
     "astro": "^5.16.0",
     "preact": "^10.27.2"
+  },
+  "devDependencies": {
+    "baseline-browser-mapping": "^2.10.18"
   }
 }

@@ -26,7 +26,7 @@ ingredients:
   - Cajun seasoning, sea salt, and pepper to taste
   - Green onions for garnish
 source: "https://fitmencook.com/recipes/low-carb-cajun-jambalaya-one-skillet-recipe/"
-video: ""
+video: "sEupzScns-o"
 ---
 
 ## Method

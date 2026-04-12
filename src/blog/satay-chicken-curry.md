@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2016/05/Satay-Chicken-Curry_SQ.jpg"
     alt: "Bowl of Chicken Satay Curry (Malaysian) served over Jasmine Rice"
-tags: ["chicken", "Asian", "one pot"]
+tags: ["chicken", "Asian", "one pot", "curry", "dinner party"]
 shortName: Satay Chicken Curry
 ingredients:
   - 1½ tsp coriander
@@ -33,7 +33,7 @@ ingredients:
   - 3 makrut lime leaves
   - 1 lemongrass stalk
 source: "https://www.recipetineats.com/chicken-satay-curry/"
-video: ""
+video: "aESMdj1xQss"
 ---
 
 ## Method

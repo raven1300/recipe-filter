@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2024/01/One-pan-chicken-creamy-tomato-risoni-with-crispy-salami-2.jpg"
     alt: "One pan chicken creamy tomato risoni with crispy salami (orzo)"
-tags: ["chicken", "one pot", "pasta", "Italian"]
+tags: ["chicken", "one pot", "pasta", "Italian", "comfort"]
 shortName: Chicken Risoni Salami
 ingredients:
   - ½ tbsp olive oil
@@ -30,7 +30,7 @@ ingredients:
   - ⅓ cup sun-dried tomatoes, chopped
   - 2 tbsp basil, chopped
 source: "https://www.recipetineats.com/one-pot-chicken-risoni-with-crispy-salami/"
-video: ""
+video: "UmklFie1F2E"
 ---
 
 ## Method

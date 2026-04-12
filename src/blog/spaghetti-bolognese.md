@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2018/07/Spaghetti-Bolognese.jpg"
     alt: "Spaghetti Bolognese in a bowl sprinkled with fresh parmesan, ready to be eaten"
-tags: ["beef", "pasta", "Italian", "one pot"]
+tags: ["beef", "pasta", "Italian", "one pot", "comfort"]
 shortName: Spaghetti Bolognese
 ingredients:
   - 1½ tbsp olive oil
@@ -26,7 +26,7 @@ ingredients:
   - 400g/13 oz spaghetti
   - Parmesan cheese and parsley for garnish
 source: "https://www.recipetineats.com/spaghetti-bolognese/"
-video: ""
+video: "DNFyRF5pVA8"
 ---
 
 ## Method

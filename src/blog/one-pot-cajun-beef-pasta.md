@@ -32,7 +32,7 @@ ingredients:
   - 0.25 tsp black pepper
   - 1.25 tsp salt
 source: "https://www.recipetineats.com/one-pot-cajun-beef-pasta/"
-video: ""
+video: "j0dNTTuZ9lc"
 ---
 
 ## Method

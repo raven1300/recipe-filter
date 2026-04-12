@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "/images/air-fry-chicken.png"
     alt: "Crispy air fryer chicken strips and potato wedges"
-tags: ["chicken", "air fryer", "add more veg"]
+tags: ["chicken", "air fryer", "add more veg", "Youtube"]
 shortName: Air Fryer Chicken
 ingredients:
   - 500g potato wedges
@@ -20,7 +20,7 @@ ingredients:
   - 1 egg
   - cornstarch 
   - 50g breadcrumbs 
-source: ""
+source: "https://www.youtube.com/watch?v=NF8bDCckleo"
 video: "NF8bDCckleo"
 ---
 

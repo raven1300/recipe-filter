@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2016/02/Sausage-ragu_7-square.jpg"
     alt: "Sausage ragu pasta sauce with pappardelle in a bowl ready to be eaten"
-tags: ["sausage", "beef", "pasta", "Italian"]
+tags: ["sausage", "beef", "pasta", "Italian", "dinner party"]
 shortName: Sausage Ragu
 ingredients:
   - 2 tbsp olive oil
@@ -30,7 +30,7 @@ ingredients:
   - Parmesan or parmigiano reggiano, grated
   - Parsley, chopped (optional garnish)
 source: "https://www.recipetineats.com/italian-sausage-beef-ragu/"
-video: ""
+video: "ppMGXpPNHL4"
 ---
 
 ## Method

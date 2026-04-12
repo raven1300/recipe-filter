@@ -20,7 +20,7 @@ ingredients:
   - 2 jars basil pesto (185g each)
   - ¼ cup shredded parmesan
 source: "https://www.chef-michael.com/recipes/keto-pesto-chicken"
-video: ""
+video: "khE8HNWV1fI"
 ---
 
 ## Method

@@ -21,7 +21,7 @@ ingredients:
   - 1½ tsp chilli garlic sauce
   - Rice and sliced red chilli, to serve
 source: "https://www.recipetineats.com/stir-fried-green-beans-with-pork/"
-video: ""
+video: "jkAYGY-c3qA"
 ---
 
 ## Method

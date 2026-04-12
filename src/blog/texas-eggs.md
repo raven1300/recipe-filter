@@ -1,15 +1,15 @@
 ---
-title: "Big Texas" Eggs in Purgatory
+title: "Big Texas Eggs in Purgatory"
 pubDate: 2026-03-19
 description: "A bold one-pan skillet of pork sausage and eggs baked in a spiced tomato and green chile sauce with smoky Southwest flavors."
 author: Raven
 image:
     url: "https://images.squarespace-cdn.com/content/v1/5c8d51add74562eedd680e87/df4b1744-804d-4608-b5c8-8fa06c3e3648/2022_06_28_TETHER_604-EDIT-4.jpg"
     alt: "Eggs baked in a skillet of spiced sausage tomato sauce"
-tags: ["pork", "one pot", "Mexican", "breakfast"]
+tags: ["pork", "baked", "Mexican", "breakfast"]
 shortName: Texas Eggs
 ingredients:
-  - 450g fresh pork sausage (Jimmy Dean regular roll recommended)
+  - 450g fresh pork sausage
   - 1 yellow onion, diced
   - 1 red capsicum, diced
   - 2-3 jalapeños, thinly sliced
@@ -23,9 +23,10 @@ ingredients:
   - 675g no-sugar marinara sauce
   - 110g can diced green chiles, drained
   - 4 eggs
-  - optional toppings: Mexican crema, queso fresco, pickled jalapeños, avocado, cilantro
+  - avocado (optional) 
+  - cilantro (optional)
 source: "https://www.chef-michael.com/recipes/texas-eggs"
-video: ""
+video: "O8d-YzuK_yQ"
 ---
 
 ## Method

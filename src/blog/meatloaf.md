@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2020/05/Meatloaf_3a-SQ.jpg"
     alt: "Sliced meatloaf with caramelised glaze on a serving platter"
-tags: ["beef", "baked", "eggs"]
+tags: ["beef", "baked", "add more veg", "comfort"]
 shortName: Classic Meatloaf
 ingredients:
   - 1 cup panko breadcrumbs
@@ -24,7 +24,7 @@ ingredients:
   - 2 tbsp cider vinegar (for glaze)
   - 1 tbsp brown sugar (for glaze)
 source: "https://www.recipetineats.com/meatloaf-recipe/"
-video: ""
+video: "TpH5lcgAERI"
 ---
 
 ## Method

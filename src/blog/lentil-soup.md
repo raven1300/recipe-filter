@@ -25,7 +25,7 @@ ingredients:
   - ¼ tsp salt and pepper
   - Chopped fresh parsley, to garnish
 source: "https://www.recipetineats.com/lentil-soup/"
-video: ""
+video: "ZKiDyHjdPl8"
 ---
 
 ## Method

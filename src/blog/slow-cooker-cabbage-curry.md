@@ -4,7 +4,7 @@ pubDate: 2026-03-19
 description: "A flavorful vegetarian slow cooker curry loaded with cabbage, potatoes, peas, and aromatic Indian spices, served over basmati rice."
 author: Raven
 image:
-    url: "https://sftimes.s3.amazonaws.com/a/7/b/3/a7b36e7552c9425f94efc57fe78e8daa.jpg"
+    url: "/images/cabbage-curry.jpg"
     alt: "Slow cooker cabbage curry in a bowl with rice"
 tags: ["vegetarian", "slow cooker", "Indian", "curry"]
 shortName: Cabbage Curry

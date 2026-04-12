@@ -25,7 +25,7 @@ ingredients:
   - Green onion, sliced, to serve
   - Sesame seeds, to serve
 source: "https://www.recipetineats.com/one-pot-chinese-chicken-and-rice/"
-video: ""
+video: "T3UmnAlfNGQ"
 ---
 
 ## Method

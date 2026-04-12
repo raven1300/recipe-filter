@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://paleogrubs.com/wp-content/uploads/2019/05/5a-mexican-ground-beef-paleo-casserole-1024x1024.jpg"
     alt: "Mexican ground beef casserole in a baking dish"
-tags: ["beef", "Mexican", "baked"]
+tags: ["beef", "Mexican", "baked", "casserole"]
 shortName: Mexican Beef Casserole
 ingredients:
   - 2 tablespoons olive oil

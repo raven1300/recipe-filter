@@ -32,7 +32,7 @@ ingredients:
   - ½ tsp black pepper
   - ½ tsp salt
 source: "https://www.recipetineats.com/jambalaya-recipe/"
-video: ""
+video: "GyRYu1SXQjU"
 ---
 
 ## Method

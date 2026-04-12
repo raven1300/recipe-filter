@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.recipetineats.com/tachyon/2021/08/One-Pot-Sausage-and-Rice_74-SQ.jpg"
     alt: "Freshly cooked pot of One Pot Smoked Sausage and Rice"
-tags: ["sausage", "rice", "one pot"]
+tags: ["sausage", "rice", "one pot", "comfort"]
 shortName: Sausage and Rice
 ingredients:
   - 3 tbsp extra virgin olive oil
@@ -23,7 +23,7 @@ ingredients:
   - 2 cups frozen peas, thawed
   - 2 tbsp parsley, chopped (optional)
 source: "https://www.recipetineats.com/smoked-sausage-and-rice-quick-one-pot-meal/"
-video: ""
+video: "kZaxUJzgnrM"
 ---
 
 ## Method

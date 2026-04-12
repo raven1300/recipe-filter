@@ -6,7 +6,7 @@ author: Raven
 image:
     url: "https://www.everylastbite.com/wp-content/uploads/2018/01/DSC_1578-1.jpg"
     alt: "Bowl of Mexican cauliflower rice with cilantro and lime"
-tags: ["vegetarian", "rice", "Mexican"]
+tags: ["vegetarian", "rice", "Mexican", "side dish"]
 shortName: Mexican Cauli Rice
 ingredients:
   - 1 small head cauliflower (approximately 4 cups processed)
