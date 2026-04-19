@@ -6,10 +6,12 @@ A personal recipe browser and meal planning tool built with Astro. Browse recipe
 
 - **Recipe browser** — grid of recipe cards with thumbnail images, tag badges, and Add to List button
 - **Tag filtering** — filter by ingredient, cuisine, cook method, or dish type using AND logic (sidebar with emoji tags)
+- **Search** — filter recipes by title via the search modal
 - **My List** — save up to 6 recipes; view full recipes with ingredients and method side by side
 - **Shopping list** — automatically generated from your list, grouped into categories (vegetables, meats, dairy, etc.) and copied to clipboard
 - **Individual recipe pages** — each recipe has its own page at `/recipes/<slug>/` with ingredients and method
 - **Dark mode** — dark mode default with OS preference detection; toggle in the header
+- **Mobile responsive** — drawer-based filter and list panels for small screens
 - **RSS feed** — available at `/rss.xml`
 
 ## Recipe Files
@@ -32,6 +34,8 @@ shortName: Short Title        # used in shopping list
 ingredients:
   - 500g chicken thighs
   - 2 garlic cloves, minced
+source: "https://example.com/original-recipe"   # optional
+video: "https://youtube.com/watch?v=..."         # optional
 ---
 ```
 
@@ -63,5 +67,6 @@ npm run preview   # preview production build
 
 - [Astro](https://astro.build) — static site generator
 - [Preact](https://preactjs.com) — interactive recipe browser component
+- TypeScript — strict config, JSX via Preact
 - CSS custom properties for theming (light/dark mode)
 - Google Fonts — Crimson Pro (headings), Lato (body), Space Grotesk (card titles)
