@@ -26,3 +26,9 @@ pnpm-debug.log*
 
 # local-only docs
 docs/progress.md
+
+# Local Netlify folder
+.netlify
+
+# Deno
+deno.lock

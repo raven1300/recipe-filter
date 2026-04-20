@@ -1,6 +1,7 @@
 // Ingredients that match are silently dropped from the shopping list
 export const ignore = [
   "water",
+  "boiling water",
   "salt",
   "pepper",
   "black pepper",
@@ -15,8 +16,8 @@ export const categories = {
       "lettuce", "potato", "squash", "kale", "scallion", "shallot", "green bean",
       "jalapeño", "jalapeno", "green chile", "pineapple", "leaves", "cucumber",
     ],
-    exclude: ["tomato paste", "tomato puree", "tinned tomatoes", "mixed vegetables", 
-      "frozen", "canned crushed tomatoes", "cornstarch", "tin of tomatoes", "onion powder"],
+    exclude: ["tomato paste", "tomato puree", "tomato sauce", "tinned tomatoes", "mixed vegetables",
+      "frozen", "canned crushed tomatoes", "cornstarch", "tin of tomatoes", "onion powder", "curry leaves"],
   },
   "meats": {
     keywords: [
@@ -31,7 +32,7 @@ export const categories = {
       "eggs", "yoghurt", "mayo", "mayonaise", "feta", "chorizo", "yogurt", "ricotta",
       "egg yolks", "mozzarella", "egg",
     ],
-    exclude: ["peanut butter"],
+    exclude: ["peanut butter", "coconut milk"],
   },
   "pasta & grains": {
     keywords: [
@@ -54,8 +55,8 @@ export const categories = {
       "turmeric", "garam masala", "curry powder", "cayenne", "chili powder",
       "cardamom", "cinnamon", "star anise", "bay", "ginger", "galangal",
       "lemongrass", "fennel", "sage", "parsley", "cilantro", "chives",
-      "tamarind", "sesame seed", "mustard seed", "broth", "garlic", "nutmeg",
-      "mixed herbs", "cornstarch", "recipe base",
+      "tamarind", "sesame seed", "mustard seed", "broth", "garlic", "garlic powder", "nutmeg",
+      "mixed herbs", "cornstarch", "recipe base", "curry leaves",
     ],
     exclude: [],
   },
@@ -75,7 +76,7 @@ export const categories = {
   },
   "sweeteners": {
     keywords: ["honey", "maple syrup", "sugar", "coconut"],
-    exclude: [],
+    exclude: ["desiccated coconut", "coconut milk", "coconut oil"],
   },
   "other": {
     keywords: [],
@@ -84,7 +85,9 @@ export const categories = {
 };
 
 function categorise(ingredient) {
-  const lower = ingredient.toLowerCase().replace(/,\s*for\s+\w+.*$/, '');
+  const lower = ingredient.toLowerCase()
+    .replace(/,\s*for\s+\w+.*$/, '')
+    .replace(/\s+(to taste|to serve|as needed|as desired).*$/i, '');
   for (const [category, { keywords, exclude }] of Object.entries(categories)) {
     if (exclude.some(ex => lower.includes(ex))) continue;
     if (keywords.some(kw => lower.includes(kw))) return category;
@@ -98,7 +101,10 @@ export function buildShoppingList(selectedRecipes) {
   for (const recipe of selectedRecipes) {
     for (const ingredient of recipe.ingredients) {
       const lower = ingredient.toLowerCase();
-      const stripped = lower.replace(/^(?:[\d\s¼½¾⅓⅔⅛\/\.]+)?(?:tsp|tbsp|teaspoon|tablespoon|cup|g|ml|oz|lb|kg|pinch|dash|handful|bunch|sprig|clove|can|jar|slice|piece)s?\s+(?:of\s+)?/i, '').trim();
+      const stripped = lower
+        .replace(/^(?:[\d\s¼½¾⅓⅔⅛\/\.]+)?(?:tsp|tbsp|teaspoon|tablespoon|cup|g|ml|oz|lb|kg|pinch|dash|handful|bunch|sprig|clove|can|jar|slice|piece)s?\s+(?:of\s+)?/i, '')
+        .replace(/\s+(to taste|to serve|as needed|as desired).*$/i, '')
+        .trim();
       if (ignore.some(ig => stripped === ig)) continue;
       const category = categorise(ingredient);
       if (!grouped[category]) grouped[category] = [];

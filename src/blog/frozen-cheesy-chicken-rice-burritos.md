@@ -25,8 +25,8 @@ ingredients:
   - 150g (1½ cups) reduced-fat cheddar cheese
   - 120g (1 cup) reduced-fat mozzarella cheese
   - 18 burrito-sized tortillas
-source: ""
-video: ""
+source: "https://www.youtube.com/watch?v=ISgO0lCbRCA"
+video: "ISgO0lCbRCA"
 ---
 
 ## Method

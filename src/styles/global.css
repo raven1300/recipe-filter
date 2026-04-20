@@ -230,6 +230,20 @@ footer {
   gap: 0.75rem;
 }
 
+.cooking-plan-loading {
+  font-style: italic;
+  color: var(--text-muted);
+  padding: 2rem 0;
+}
+
+.cooking-plan-text {
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
 .shopping-list-textarea {
   width: 100%;
   min-height: 60vh;

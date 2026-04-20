@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
 import { buildShoppingList } from '../data/categories.js';
 import { tagEmojis } from '../data/tagConfig.js';
+import { marked } from 'marked';
 
 function CopyButton({ getText }) {
   const [copied, setCopied] = useState(false);
@@ -51,12 +52,27 @@ export default function RecipeBrowser({ recipes }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [sharedRecipes, setSharedRecipes] = useState(null); // null = normal mode, array = shared view
+  const [shareCopied, setShareCopied] = useState(false);
+  const [cookingPlan, setCookingPlan] = useState(null);
+  const [planLoading, setPlanLoading] = useState(false);
   const searchInputRef = useRef(null);
 
   useEffect(() => {
     setSelectedTags(readSet(TAGS_KEY));
     setMyList(readSet(LIST_KEY));
     setHydrated(true);
+
+    // Check for shared list in URL hash — read-only, never touches localStorage
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const slugs = hash.split('+');
+      const found = slugs.map(slug => recipes.find(r => r.id === slug)).filter(Boolean);
+      if (found.length > 0) {
+        setSharedRecipes(found);
+        setView('list');
+      }
+    }
   }, []);
 
   useEffect(() => { if (hydrated) writeSet(LIST_KEY, myList); }, [myList, hydrated]);
@@ -64,6 +80,9 @@ export default function RecipeBrowser({ recipes }) {
 
   const allTags = [...new Set(recipes.flatMap(r => r.tags))].sort();
   const myListRecipes = [...myList].map(id => recipes.find(r => r.id === id)).filter(Boolean);
+
+  // Which recipes to show in the list view
+  const listViewRecipes = sharedRecipes ?? myListRecipes;
 
   const toggleTag = (tag) => {
     setSelectedTags(prev => {
@@ -88,6 +107,22 @@ export default function RecipeBrowser({ recipes }) {
     localStorage.removeItem(TAGS_KEY);
   };
 
+  const backToBrowse = () => {
+    setSharedRecipes(null);
+    setView('browse');
+    // Clear the hash without triggering a navigation
+    history.replaceState(null, '', window.location.pathname);
+  };
+
+  const shareList = () => {
+    const hash = [...myList].join('+');
+    const url = `${window.location.origin}${window.location.pathname}#${hash}`;
+    navigator.clipboard.writeText(url).then(() => {
+      setShareCopied(true);
+      setTimeout(() => setShareCopied(false), 2000);
+    });
+  };
+
   const visibleRecipes = selectedTags.size === 0
     ? recipes
     : recipes.filter(r => [...selectedTags].every(t => r.tags.includes(t)));
@@ -100,6 +135,39 @@ export default function RecipeBrowser({ recipes }) {
 
   const openSearch = () => { setSearchOpen(true); setSearchQuery(''); };
   const closeSearch = () => { setSearchOpen(false); setSearchQuery(''); };
+
+  const extractMethod = (recipeId) => {
+    const source = document.getElementById(`recipe-content-${recipeId}`);
+    if (!source) return '';
+    const lists = source.querySelectorAll('ol');
+    return [...lists].map(ol =>
+      [...ol.querySelectorAll('li')].map((li, i) => `${i + 1}. ${li.textContent.trim()}`).join('\n')
+    ).join('\n');
+  };
+
+  const generateCookingPlan = async () => {
+    setView('cooking-plan');
+    setPlanLoading(true);
+    setCookingPlan(null);
+    setMobileDrawerOpen(false);
+    const recipeData = myListRecipes.map(r => ({
+      title: r.title,
+      method: extractMethod(r.id),
+    }));
+    try {
+      const res = await fetch('/api/cooking-plan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ recipes: recipeData }),
+      });
+      const data = await res.json();
+      setCookingPlan(data.plan || data.error || 'Something went wrong.');
+    } catch {
+      setCookingPlan('Failed to generate plan. Please try again.');
+    } finally {
+      setPlanLoading(false);
+    }
+  };
 
   return (
     <div class="rb-layout">
@@ -262,6 +330,20 @@ export default function RecipeBrowser({ recipes }) {
             >
               Shopping list
             </button>
+            <button
+              class={`rb-drawer-action-btn rb-share-btn${shareCopied ? ' copied' : ''}`}
+              onClick={shareList}
+            >
+              {shareCopied ? '✓ Link copied!' : '🔗 Share list'}
+            </button>
+            {myListRecipes.length >= 2 && (
+              <button
+                class="rb-drawer-action-btn"
+                onClick={generateCookingPlan}
+              >
+                🍳 Cooking plan
+              </button>
+            )}
           </div>
         )}
         <div class="rb-drawer-footer">{myList.size} / {LIST_MAX} recipes saved</div>
@@ -271,13 +353,13 @@ export default function RecipeBrowser({ recipes }) {
       {view === 'list' && (
         <div class="rb-fullview">
           <div class="rb-fullview-header">
-            <button class="rb-back-btn" onClick={() => setView('browse')}>← Back to Browse</button>
-            <h2>My Recipe List</h2>
+            <button class="rb-back-btn" onClick={backToBrowse}>← Back to Browse</button>
+            <h2>{sharedRecipes ? 'Shared Recipe List' : 'My Recipe List'}</h2>
           </div>
           <div class="rb-fullview-body">
-            {myListRecipes.length === 0
+            {listViewRecipes.length === 0
               ? <p>No recipes in your list. Go back and add some.</p>
-              : myListRecipes.map(recipe => (
+              : listViewRecipes.map(recipe => (
                   <div key={recipe.id} class="recipe-full">
                     <div class="recipe-full-header">
                       <h2>{recipe.title}</h2>
@@ -285,7 +367,9 @@ export default function RecipeBrowser({ recipes }) {
                         {recipe.video && (
                           <a href={`https://www.youtube.com/watch?v=${recipe.video}`} target="_blank" rel="noopener noreferrer" class="recipe-video-link">▶ Watch video</a>
                         )}
-                        <button onClick={() => toggleMyList(recipe.id)} class="list-toggle">Remove</button>
+                        {!sharedRecipes && (
+                          <button onClick={() => toggleMyList(recipe.id)} class="list-toggle">Remove</button>
+                        )}
                       </div>
                     </div>
                     {(() => {
@@ -369,6 +453,22 @@ export default function RecipeBrowser({ recipes }) {
                     ))
               }
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Cooking plan overlay */}
+      {view === 'cooking-plan' && (
+        <div class="rb-fullview">
+          <div class="rb-fullview-header">
+            <button class="rb-back-btn" onClick={() => setView('browse')}>← Back to Browse</button>
+            <h2>Cooking Plan</h2>
+          </div>
+          <div class="rb-fullview-body">
+            {planLoading
+              ? <p class="cooking-plan-loading">Generating your cooking plan…</p>
+              : <div class="cooking-plan-text" dangerouslySetInnerHTML={{ __html: marked(cookingPlan) }} />
+            }
           </div>
         </div>
       )}
