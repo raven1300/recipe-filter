@@ -150,21 +150,44 @@ export default function RecipeBrowser({ recipes }) {
     setPlanLoading(true);
     setCookingPlan(null);
     setMobileDrawerOpen(false);
+
+    const jobId = crypto.randomUUID();
     const recipeData = myListRecipes.map(r => ({
       title: r.title,
       method: extractMethod(r.id),
     }));
+
     try {
-      const res = await fetch('/api/cooking-plan', {
+      // Trigger background function — returns 202 immediately
+      await fetch('/api/cooking-plan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ recipes: recipeData }),
+        body: JSON.stringify({ recipes: recipeData, jobId }),
       });
-      const data = await res.json();
-      setCookingPlan(data.plan || data.error || 'Something went wrong.');
+
+      // Poll for result every 4 seconds
+      const poll = async () => {
+        try {
+          const res = await fetch(`/api/cooking-plan-status?id=${jobId}`);
+          const data = await res.json();
+          if (data.status === 'done') {
+            setCookingPlan(data.plan);
+            setPlanLoading(false);
+          } else if (data.status === 'error') {
+            setCookingPlan('Failed to generate plan. Please try again.');
+            setPlanLoading(false);
+          } else {
+            setTimeout(poll, 4000);
+          }
+        } catch {
+          setCookingPlan('Failed to generate plan. Please try again.');
+          setPlanLoading(false);
+        }
+      };
+
+      setTimeout(poll, 6000); // Give Claude a head start before first poll
     } catch {
       setCookingPlan('Failed to generate plan. Please try again.');
-    } finally {
       setPlanLoading(false);
     }
   };
